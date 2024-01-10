@@ -1,6 +1,6 @@
 from aiogram import Router, F
 from aiogram.types import CallbackQuery
-from keyboards.inlain import create_keyboard_tasks, create_keyboard_oge_task, create_keyboard_oge_decision
+from keyboards.inlain import IKB
 from handlers.db import users_db, users_db_condition
 from aiogram.types import FSInputFile
 from dictionar.decision_dict import decision_db
@@ -10,8 +10,8 @@ router = Router()
 @router.callback_query(F.data.startswith('oge'))
 async def message_with_text(callback: CallbackQuery):
     await callback.message.answer(
-        "Выбери какой класс тебе интересен:",    
-        reply_markup = create_keyboard_tasks()
+        "Выбери задачу:",    
+        reply_markup = await IKB.create_keyboard_tasks()
     )
     await callback.message.delete()
 
@@ -23,7 +23,7 @@ async def message_with_text(callback: CallbackQuery):
     image_from_pc = FSInputFile(f"img/taskpapka_{task_number}/task_{task_number}_{str(users_db[callback.from_user.id][f'task_{task_number}']+1)}.png")
     await callback.message.answer_photo(
         image_from_pc,
-        reply_markup = create_keyboard_oge_task(task_number,users_db[callback.from_user.id][f'task_{task_number}']+1)
+        reply_markup = await IKB.create_keyboard_oge_task(task_number,users_db[callback.from_user.id][f'task_{task_number}']+1)
     )
     await callback.message.delete()
 
@@ -36,7 +36,7 @@ async def message_with_text(callback: CallbackQuery):
             image_from_pc = FSInputFile(f"img/taskpapka_{task_number}/task_{task_number}_{str(users_db[callback.from_user.id][f'task_{task_number}']+1)}.png")
             await callback.message.answer_photo(
             image_from_pc,
-            reply_markup = create_keyboard_oge_task(task_number, users_db[callback.from_user.id][f'task_{task_number}']+1)
+            reply_markup = await IKB.create_keyboard_oge_task(task_number, users_db[callback.from_user.id][f'task_{task_number}']+1)
             )
             await callback.message.delete()
 
@@ -46,7 +46,7 @@ async def message_with_text(callback: CallbackQuery):
                 image_from_pc = FSInputFile(f"img/taskpapka_{task_number}/task_{task_number}_{str(users_db[callback.from_user.id][f'task_{task_number}']+1)}.png")
                 await callback.message.answer_photo(
                 image_from_pc,
-                reply_markup = create_keyboard_oge_task(task_number, users_db[callback.from_user.id][f'task_{task_number}']+1)
+                reply_markup = await IKB.create_keyboard_oge_task(task_number, users_db[callback.from_user.id][f'task_{task_number}']+1)
                 )
                 await callback.message.delete()
         else:
@@ -60,7 +60,7 @@ async def message_with_text(callback: CallbackQuery):
     task_number = users_db_condition[callback.from_user.id]['task_number']
     await callback.message.answer(
          f"Ответ: {decision_db[task_number][str(users_db[callback.from_user.id][f'task_{task_number}']+1)]}",
-         reply_markup=create_keyboard_oge_decision(task_number, users_db[callback.from_user.id][f'task_{task_number}']+1)
+         reply_markup= await IKB.create_keyboard_oge_decision(task_number, users_db[callback.from_user.id][f'task_{task_number}']+1)
     )
     await callback.message.delete()
     

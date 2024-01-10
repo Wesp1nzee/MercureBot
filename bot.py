@@ -1,7 +1,7 @@
 import logging
 import asyncio
 from aiogram import Bot, Dispatcher
-from handlers import questions, filter_text, filter_callback_learning, filter_callback_oge
+from handlers import handler_menu, handler_oge, handler_physics, start_command
 from keyboards.main_menu import set_main_menu
 from TOKEN import API_
 
@@ -19,7 +19,7 @@ async def main():
     logger.info('Starting bot')
     bot = Bot(token=API_, parse_mode='HTML')
     dp = Dispatcher()
-    dp.include_routers(questions.router, filter_text.router, filter_callback_learning.router, filter_callback_oge.router)
+    dp.include_routers(start_command.router, handler_menu.router, handler_physics.router, handler_oge.router)
     await set_main_menu(bot)
     # Запускаем бота и пропускаем все накопленные входящие
     await bot.delete_webhook(drop_pending_updates=True)
