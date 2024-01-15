@@ -186,7 +186,6 @@ class IKB:
     
     @staticmethod
     async def create_kb_informatics_url() -> InlineKeyboardMarkup:
-        
         return InlineKeyboardMarkup(inline_keyboard=[
             [
                 InlineKeyboardButton(text="Плейлист", url="https://www.youtube.com/watch?v=mUY00El5fZQ&list=PLs2IpQwiXpT130p7XYe9JJ0KN8aFEROdK")
