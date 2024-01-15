@@ -1,4 +1,4 @@
-dict_tack_count: dict[str,int] = {
+dict_tack_count_physics: dict[str,int] = {
     'task_1':0,
     'task_2':0, 
     'task_3':0, 
@@ -22,14 +22,29 @@ dict_tack_count: dict[str,int] = {
     'task_21':0,
     }
 
-condition ={
-    "class": None,
+dict_tack_count_informatics: dict[str,int] = {
+    'task_1':0,
+    'task_2':0, 
+    'task_3':0, 
+    'task_4':0, 
+    'task_5':0, 
+    'task_6':0, 
+    'task_7':0, 
+    'task_8':0, 
+    'task_9':0, 
+    'task_10':0,
+    }
+
+condition = {
+    'section': None,
+    "object" : None,
     "direction": None,
-    "chapter": None,
     "task_number": None
 }
 
-users_db = {}
+users_db_physics = {}
+
+users_db_informatics = {}
 
 users_db_condition = {}
 
