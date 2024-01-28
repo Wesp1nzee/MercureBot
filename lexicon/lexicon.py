@@ -1,4 +1,4 @@
-from handlers.db import users_db_physics
+from router.db import users_db_physics
 
 LEXICON: dict[str, str] = {
     '/start': "\nЯ твой персональный бот-помощник по физике! 🤖🔬"

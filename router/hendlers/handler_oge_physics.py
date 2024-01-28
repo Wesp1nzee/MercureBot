@@ -1,7 +1,7 @@
 from aiogram import Router, F
 from aiogram.types import CallbackQuery
 from keyboards.inlain import IKB
-from handlers.db import users_db_physics, users_db_condition
+from router.db import users_db_physics, users_db_condition
 from aiogram.types import FSInputFile
 from dictionar.decision_dict import decision_db
 
@@ -55,7 +55,7 @@ async def message_with_text(callback: CallbackQuery):
 
             else:
                 await callback.answer(
-                text="Извините, но меньше нельзя!",
+                text="Извините, но больше нельзя!",
                 show_alert=True
                 )
 

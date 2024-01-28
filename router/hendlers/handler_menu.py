@@ -2,17 +2,21 @@ from typing import Union
 
 from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery
-from aiogram.filters import Command
+from aiogram.filters import Command, StateFilter
+from aiogram.fsm.context import FSMContext
+from aiogram.fsm.state import default_state, State, StatesGroup
+from aiogram.fsm.storage.memory import MemoryStorage
 
 from keyboards.inlain import IKB
 from lexicon.lexicon import LEXICON, generate_tasks_string
+from FSM.fsm import StateMachine
 
 router = Router()
 
-@router.message(F.text == "⚡️Меню")
+
 @router.message(Command(commands = "menu"))
-@router.callback_query(F.data == "menu")
-async def message_with_text(query_message: Union[CallbackQuery, Message]):
+@router.callback_query(F.data == "menu", StateFilter(StateMachine.start))
+async def message_with_text(query_message: Union[CallbackQuery, Message], state: FSMContext):
     if isinstance(query_message, CallbackQuery):
         await query_message.message.edit_text(
             "⬇️Выбери что тебе интересно⬇️",    
@@ -24,6 +28,8 @@ async def message_with_text(query_message: Union[CallbackQuery, Message]):
             "⬇️Выбери что тебе интересно⬇️",    
             reply_markup= await IKB.create_keyboard_menu()
             )
+    
+    await state.set_state(StateMachine.menu)
 
 @router.message(Command(commands = 'help'))
 @router.callback_query(F.data == 'help')
@@ -31,16 +37,16 @@ async def help_command(query_message: Union[CallbackQuery, Message]):
     if isinstance(query_message, CallbackQuery):
         await query_message.message.edit_text(
             f"{LEXICON['/help']}",    
-            reply_markup= await IKB.create_keyboard_menu_start()
+            reply_markup= await IKB.create_kb_help()
             )
         
     if isinstance(query_message, Message):
         await query_message.answer(
             f"{LEXICON['/help']}",    
-            reply_markup= await IKB.create_keyboard_menu()
+            reply_markup= await IKB.create_kb_help()
             )
 
-@router.callback_query(F.data == 'profile')
+@router.callback_query(F.data == 'profile', StateFilter(StateMachine.menu))
 async def callbacks_profile(callback: CallbackQuery):
     await callback.message.edit_text(
         f"Это профиль и тут вам предлагается просмотреть статистику по вашим решеным задачкам.📊\n\n"

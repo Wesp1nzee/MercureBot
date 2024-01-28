@@ -1,8 +1,8 @@
-from aiogram.utils.keyboard import InlineKeyboardBuilder, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.utils.keyboard import InlineKeyboardMarkup, InlineKeyboardButton
 
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from dictionar.oge_tasks import oge_list_physics, oge_list_informatics
-from handlers.db import users_db_condition
+from router.db import users_db_condition
 
 class IKB:
 
@@ -66,22 +66,6 @@ class IKB:
         ])
     
     @staticmethod
-    async def create_kb_oge_task(task_number: str, task_count: int, user_id: int) -> InlineKeyboardMarkup:
-        return InlineKeyboardMarkup(inline_keyboard=[
-            [
-                InlineKeyboardButton(text="«",callback_data=f"{users_db_condition[user_id]['object']}:tasks_back_{task_number}"),
-                InlineKeyboardButton(text=f"{task_count}/60",callback_data="plug"),
-                InlineKeyboardButton(text="»",callback_data=f"{users_db_condition[user_id]['object']}:tasks_next_{task_number}")
-            ],
-            [
-                InlineKeyboardButton(text="📝Решение",callback_data=f"{users_db_condition[user_id]['object']}:decision_{task_number}_{task_count}")
-            ],
-            [
-                InlineKeyboardButton(text="🔙Назад",callback_data=f"{users_db_condition[user_id]['object']}_task")
-            ]
-        ])
-    
-    @staticmethod
     async def create_kb_task_physics() -> InlineKeyboardMarkup:
         buttons_rows = []
         buttons_all = [InlineKeyboardButton(text=f"{item}", callback_data=f"physics:task_{index+1}") for index, item in enumerate(oge_list_physics)]
@@ -93,8 +77,6 @@ class IKB:
             row = []
 
         return InlineKeyboardMarkup(inline_keyboard=buttons_rows)
-    
-    
     
     @staticmethod
     async def create_kb_tasks_informatics() -> InlineKeyboardMarkup:

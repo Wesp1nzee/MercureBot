@@ -1,7 +1,7 @@
 from aiogram import Router, F
 from aiogram.types import CallbackQuery
 from keyboards.inlain import IKB
-from handlers.db import users_db_informatics, users_db_condition
+from router.db import users_db_informatics, users_db_condition
 from aiogram.types import FSInputFile
 from dictionar.decision_dict import decision_db
 
