@@ -7,21 +7,13 @@ from keyboards.main_menu import set_main_menu
 from config import API_
 from database.datacoonect import db
 from router.conect_hendlers import connect_client
-from config import HOST, USER, PASSWORD, DATABASE, PORT
 
 loop = asyncio.get_event_loop()
 logger = logging.getLogger(__name__)
 
 async def main():
     #Создаем соеденение с БД
-    await db.create_connection(
-        HOST=HOST,
-        PORT=PORT,
-        USER=USER,
-        PASSWORD=PASSWORD,
-        DATABASE=DATABASE,   
-        loop=loop
-    )
+    await db.create_connection(loop)
 
     logging.basicConfig(
         level=logging.INFO,
@@ -39,6 +31,6 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
-    loop.run_until_complete(main())
+    asyncio.run(main())
 
 

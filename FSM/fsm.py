@@ -4,5 +4,16 @@ from aiogram.fsm.state import StatesGroup, State
 class StateMachine(StatesGroup):
     start = State()
     menu = State()
+
+    profile = State()
     informatics = State()
     physics = State()
+
+    theory_informatics = State()
+    task_selection_informatics = State()
+    leaf_task_informatics = State()
+
+    theory_physics = State()
+    task_selection_physics = State()
+    leaf_task_physics = State()
+    

@@ -1,4 +1,4 @@
-from router.db import users_db_physics
+
 
 LEXICON: dict[str, str] = {
     '/start': "\nЯ твой персональный бот-помощник по физике! 🤖🔬"
@@ -28,5 +28,5 @@ LEXICON_INFORMATIC: str = {
 async def generate_tasks_string(user_id):
     tasks_string = ""
     for i in range(1, 22):
-        tasks_string += f"{i} Задача ОГЭ: {users_db_physics[user_id][f'task_{i}']}\n"
+        tasks_string += f"{i} Задача ОГЭ: 1\n"
     return tasks_string
