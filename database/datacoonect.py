@@ -36,14 +36,22 @@ class DataBase:
             await cur.execute(f"INSERT INTO users.physics_task_users (users_id) VALUES('{id}')")
             await cur.execute(f"INSERT INTO users.informatics_task_users (users_id) VALUES('{id}')")
 
-    async def count_user(self, id)-> int:
+    async def count_task(self, task_number)-> int:
         """Функция проверка есть ли пользователь в базе данных"""
+        pool = settings.conn
+        async with pool.cursor() as cursor:
+            await cursor.execute(f"SELECT COUNT(task_{task_number}) FROM users.informatics_task")
+            for row in await cursor.fetchall():
+                return row[0]
+
+    async def count_user(self, id)-> int:
+        """Функция выводит количество """
         pool = settings.conn
         async with pool.cursor() as cursor:
             await cursor.execute(f"SELECT COUNT(*) FROM users.users WHERE users_id = {id} ")
             for row in await cursor.fetchall():
-                return row[0]
-            
+                return row[0]       
+
     async def update_user_task(self, id, object, task_number, sign)-> int:
         """Функция обновление данных в таблице task"""
         pool = settings.conn
@@ -58,5 +66,20 @@ class DataBase:
             for row in await cur.fetchall():
                 return row[1]
 
+    async def get_task_decision(self, id, task_number, object)-> str:
+        """Функция выдаёт решение задачи"""
+        pool = settings.conn
+        async with pool.cursor() as cur:
+            await cur.execute(f"SELECT id, task_{task_number} FROM users.{object}_task_decision WHERE (id) = ({id})")
+            for row in await cur.fetchall():
+                return row[1]
+
+    async def get_task(self, object, id, task_number)-> str:
+        """Функция выдаёт id задачи"""
+        pool = settings.conn
+        async with pool.cursor() as cur:
+            await cur.execute(f"SELECT id, task_{task_number} FROM users.{object}_task WHERE (id) = ({id})")
+            for row in await cur.fetchall():
+                return row[1]
 
 db = DataBase()

@@ -1,7 +1,7 @@
 from typing import Union
 
 from keyboards.inlain import ikb
-from FSM.fsm import StateMachine
+from fsm import StateMachine
 from callback_factory import FactoryTask
 
 from aiogram.fsm.context import FSMContext

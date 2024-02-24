@@ -2,23 +2,21 @@ from typing import Union
 
 from keyboards.inlain import ikb
 from lexicon.lexicon import LEXICON_INFORMATIC
-from FSM.fsm import StateMachine
-from callback_factory import FactoryTask
+from fsm import StateMachine
 
 from aiogram import Router, F
-from aiogram.types import CallbackQuery, Message
-from aiogram.enums import ParseMode 
-from aiogram.utils.markdown import hide_link 
+from aiogram.types import CallbackQuery, Message 
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 
 
 router = Router()
+
 #Пользователь выбрал информатику
 @router.message(Command(commands="informatics"))
 @router.callback_query(F.data == "back_informatics")
 @router.callback_query(F.data == "informatics:section", StateMachine.menu)
-async def callbacks_profile(query_message: Union[CallbackQuery, Message], state: FSMContext):
+async def informatics(query_message: Union[CallbackQuery, Message], state: FSMContext):
 
     if isinstance(query_message, CallbackQuery):
         await query_message.message.edit_text(
@@ -37,7 +35,7 @@ async def callbacks_profile(query_message: Union[CallbackQuery, Message], state:
     await state.set_state(StateMachine.informatics)
     
 @router.callback_query(F.data == 'informatics_theory', StateMachine.informatics)
-async def callbacks_profile(callback: CallbackQuery, state: FSMContext):
+async def informatics_theory(callback: CallbackQuery, state: FSMContext):
 
     await callback.message.edit_text(
         f"{LEXICON_INFORMATIC['theory']}",

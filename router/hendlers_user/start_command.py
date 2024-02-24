@@ -1,19 +1,15 @@
-from copy import deepcopy
-
 from aiogram import Router
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
-from aiogram.fsm.state import default_state
 
 from keyboards.inlain import ikb
 from lexicon.lexicon import LEXICON
-from FSM.fsm import StateMachine
+from fsm import StateMachine
 from database.datacoonect import db
 
 
 router = Router()
-
 
 # Этот хэндлер будет срабатывать на команду "/start"
 @router.message(CommandStart())
@@ -25,7 +21,6 @@ async def start_command(message: Message, state: FSMContext):
     #Проверка есть ли пользоваетль в БД если нет, то добовляет
     if not await db.count_user(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.username)
-
 
     await state.set_state(StateMachine.start)
 

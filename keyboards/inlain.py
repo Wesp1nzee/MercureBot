@@ -1,7 +1,8 @@
 from aiogram.utils.keyboard import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from dictionar.oge_tasks import oge_list_physics, oge_list_informatics
+from lexicon.dict_task_number import container
+from lexicon.lexicon import oge_list_physics, oge_list_informatics
 from callback_factory import FactoryTask
 
 class IKB:
@@ -21,7 +22,7 @@ class IKB:
             ]
         ])
 
-    async def create_keyboard_menu(self) -> InlineKeyboardMarkup:
+    async def create_kd_menu(self) -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(inline_keyboard=[
             [
                 InlineKeyboardButton(text="Информатика👨‍💻", callback_data="informatics:section"),
@@ -32,33 +33,20 @@ class IKB:
             ]
         ])
     
-    async def create_keyboard_oge_task(self, task_number: str, task_count: int, object: str) -> InlineKeyboardMarkup:
+    async def create_kb_pagination(self, task_number: str, task_count: int, object: str) -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(inline_keyboard=[
             [
                 InlineKeyboardButton(text="«",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, direction="Back").pack()),
-                InlineKeyboardButton(text=f"{task_count}/60",callback_data="plug"),
+                InlineKeyboardButton(text=f"{task_count}/{container.get_item(task_number)}",callback_data="plug"),
                 InlineKeyboardButton(text="»",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, direction="Next").pack())
             ],
             [
-                InlineKeyboardButton(text="📝Решение",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, decision="yes").pack())
+                InlineKeyboardButton(text="✅Ответ",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, decision="yes").pack())
             ],
             [
                 InlineKeyboardButton(text="🔙Назад",callback_data=f"back_{object}_task")
             ]
         ])
-    
-    async def create_keyboard_oge_decision(self, task_number: str, task_count: int, object: str) -> InlineKeyboardMarkup:
-        return InlineKeyboardMarkup(inline_keyboard=[
-            [
-                InlineKeyboardButton(text="«",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, direction="Back").pack()),
-                InlineKeyboardButton(text=f"{task_count}/60",callback_data="plug"),
-                InlineKeyboardButton(text="»",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, direction="Next").pack())
-            ],
-            [
-                InlineKeyboardButton(text="🔙Назад",callback_data=f"back_{object}_task")
-            ]
-        ])
-    
 
     async def create_kb_task_physics(self) -> InlineKeyboardMarkup:
         buttons_rows = []
@@ -81,7 +69,6 @@ class IKB:
             InlineKeyboardButton(text=item,
                                 callback_data=FactoryTask(object="informatics", task_number = index+1 ).pack()) for index, item in enumerate(oge_list_informatics)
                                 ]
-        
         buttons_all.append(InlineKeyboardButton(text="🔙Назад",callback_data=f"back_informatics"))
         row = []
         for button in buttons_all:
@@ -177,7 +164,6 @@ class IKB:
             [
                 InlineKeyboardButton(text="🔙Назад",callback_data=f"informatics:section")
             ]
-
         ])
     
 

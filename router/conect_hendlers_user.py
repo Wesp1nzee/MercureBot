@@ -1,6 +1,6 @@
 from aiogram import Dispatcher
 
-from router.hendlers import handler_oge_physics, handler_physics, start_command, handler_menu, handler_informatics, hendler_oge_informatics
+from .hendlers_user import handler_oge_physics, handler_physics, start_command, handler_menu, handler_informatics, hendler_oge_informatics
 
 
 def connect_client(dp: Dispatcher):
