@@ -16,7 +16,7 @@ router = Router()
 @router.callback_query(F.data == "physics", StateMachine.physics)
 async def message_with_text(callback: CallbackQuery, state: FSMContext):
     await callback.message.answer(
-        "Выбери задачу:",    
+        "Выбери тип задачи:",    
         reply_markup = await ikb.create_kb_task_physics()
     )
     await callback.message.delete()
@@ -37,8 +37,9 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
                                val=await db.get_task(object="physics", id=task_count, task_number=task_number))
         image_id = await cache.check_key(task_number, task_count)
 
-    await callback.message.answer_photo( 
+    await callback.message.answer_photo(
             photo=image_id,
+            protect_content=True,
             reply_markup = await ikb.create_kb_pagination(
                             task_number=task_number, 
                             task_count=task_count,
@@ -63,7 +64,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext):
                                val=await db.get_task(object="physics", id=task_count, task_number=task_number))
         image_id = await cache.check_key(task_number, task_count)
     
-    if  task_count+1 < container.get_item(task_number):
+    if  task_count+1 < await container.get_item(task_number):
         await db.update_user_task(callback.from_user.id, 'physics', task_number, sign="+")
         task_count = await db.chek_count(callback.from_user.id,'physics',task_number)
 

@@ -3,7 +3,6 @@ import aiomysql
 
 import sys 
 
-from database.setting import settings
 from config import HOST, USER, PASSWORD, DATABASE, PORT
 
 
@@ -11,26 +10,25 @@ class DataBase:
     
     async def create_connection(self,loop): 
         """Функция созданий соеденении с базой данных"""
-        if not settings.conn:
-            try:
-                # Создаем соеденение
-                settings.conn = await aiomysql.connect(
-                                            host=HOST,
-                                            port=PORT,
-                                            user=USER,
-                                            password=PASSWORD,
-                                            db=DATABASE,
-                                            autocommit=True,
-                                            loop=loop)
-            except Error as e:
-                print(f'CONNECTION ERROR: {e}')
-                sys.exit(1)
-            else:
-                print('CONNECTION SUCCESSFULL')
+        try:
+            # Создаем соеденение
+            self.conn = await aiomysql.connect(
+                                        host=HOST,
+                                        port=PORT,
+                                        user=USER,
+                                        password=PASSWORD,
+                                        db=DATABASE,
+                                        autocommit=True,
+                                        loop=loop)
+        except Error as e:
+            print(f'CONNECTION ERROR: {e}')
+            sys.exit(1)
+        else:
+            print('CONNECTION SUCCESSFULL')
 
     async def add_user(self, id, name):
         """Функция добовляет новых пользователей в базу данных"""
-        pool = settings.conn
+        pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"INSERT INTO users.users (users_id, name) VALUES({id},'{name}')")
             await cur.execute(f"INSERT INTO users.physics_task_users (users_id) VALUES('{id}')")
@@ -38,7 +36,7 @@ class DataBase:
 
     async def count_task(self, task_number)-> int:
         """Функция проверка есть ли пользователь в базе данных"""
-        pool = settings.conn
+        pool = self.conn
         async with pool.cursor() as cursor:
             await cursor.execute(f"SELECT COUNT(task_{task_number}) FROM users.informatics_task")
             for row in await cursor.fetchall():
@@ -46,7 +44,7 @@ class DataBase:
 
     async def count_user(self, id)-> int:
         """Функция выводит количество """
-        pool = settings.conn
+        pool = self.conn
         async with pool.cursor() as cursor:
             await cursor.execute(f"SELECT COUNT(*) FROM users.users WHERE users_id = {id} ")
             for row in await cursor.fetchall():
@@ -54,13 +52,13 @@ class DataBase:
 
     async def update_user_task(self, id, object, task_number, sign)-> int:
         """Функция обновление данных в таблице task"""
-        pool = settings.conn
+        pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"UPDATE users.{object}_task_users SET task_{task_number} = task_{task_number} {sign} 1 WHERE users_id = '{id}'")
 
     async def chek_count(self, id, object, task_number)-> int:
         """Функция счетчик задач"""
-        pool = settings.conn
+        pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"SELECT users_id, task_{task_number} FROM users.{object}_task_users WHERE (users_id) = ({id})")
             for row in await cur.fetchall():
@@ -68,7 +66,7 @@ class DataBase:
 
     async def get_task_decision(self, id, task_number, object)-> str:
         """Функция выдаёт решение задачи"""
-        pool = settings.conn
+        pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"SELECT id, task_{task_number} FROM users.{object}_task_decision WHERE (id) = ({id})")
             for row in await cur.fetchall():
@@ -76,10 +74,18 @@ class DataBase:
 
     async def get_task(self, object, id, task_number)-> str:
         """Функция выдаёт id задачи"""
-        pool = settings.conn
+        pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"SELECT id, task_{task_number} FROM users.{object}_task WHERE (id) = ({id})")
             for row in await cur.fetchall():
                 return row[1]
+            
+    async def add_log(self, chat_id:int , user_id:int , user_full_name:str, telegram_object:str, content:str):
+        """Функция добовляет новых пользователей в базу данных"""
+        pool = self.conn
+        async with pool.cursor() as cur:
+            await cur.execute(f"INSERT INTO users.logs (chat_id, user_id, user_full_name, telegram_object, content)\
+                              VALUES('{chat_id}', '{user_id}', '{user_full_name}', '{telegram_object}', '{content}')")
+            
 
 db = DataBase()

@@ -8,7 +8,7 @@ class DictionaryContainer:
         for i in range(1,11):
             self.dictionary[i] = await db.count_task(i)
 
-    def get_item(self, key):
+    async def get_item(self, key):
         return self.dictionary.get(key)
 
 container = DictionaryContainer()

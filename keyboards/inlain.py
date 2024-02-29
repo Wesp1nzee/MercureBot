@@ -37,7 +37,7 @@ class IKB:
         return InlineKeyboardMarkup(inline_keyboard=[
             [
                 InlineKeyboardButton(text="«",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, direction="Back").pack()),
-                InlineKeyboardButton(text=f"{task_count}/{container.get_item(task_number)}",callback_data="plug"),
+                InlineKeyboardButton(text=f"{task_count}/{await container.get_item(task_number)}",callback_data="plug"),
                 InlineKeyboardButton(text="»",callback_data=FactoryTask(object=object, task_number=task_number, task_count=task_count, direction="Next").pack())
             ],
             [
@@ -162,7 +162,7 @@ class IKB:
                 InlineKeyboardButton(text="Иван Викторович", url="https://www.youtube.com/@plugar_inf")
             ],
             [
-                InlineKeyboardButton(text="🔙Назад",callback_data=f"informatics:section")
+                InlineKeyboardButton(text="🔙Назад",callback_data=f"back_informatics")
             ]
         ])
     
