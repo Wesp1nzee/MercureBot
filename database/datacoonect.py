@@ -26,27 +26,27 @@ class DataBase:
         else:
             print('CONNECTION SUCCESSFULL')
 
-    async def add_user(self, id, name):
+    async def add_user(self, id, url, full_name):
         """Функция добовляет новых пользователей в базу данных"""
         pool = self.conn
         async with pool.cursor() as cur:
-            await cur.execute(f"INSERT INTO users.users (users_id, name) VALUES({id},'{name}')")
+            await cur.execute(f"INSERT INTO users.users (users_id, url, full_name) VALUES({id}, '{url}', '{full_name}')")
             await cur.execute(f"INSERT INTO users.physics_task_users (users_id) VALUES('{id}')")
             await cur.execute(f"INSERT INTO users.informatics_task_users (users_id) VALUES('{id}')")
 
-    async def count_task(self, task_number)-> int:
-        """Функция проверка есть ли пользователь в базе данных"""
+    async def count_task(self, task_number, objekt)-> int:
+        """Функция количесвто задач в бд"""
         pool = self.conn
         async with pool.cursor() as cursor:
-            await cursor.execute(f"SELECT COUNT(task_{task_number}) FROM users.informatics_task")
+            await cursor.execute(f"SELECT COUNT(task_{task_number}) FROM users.{objekt}_task")
             for row in await cursor.fetchall():
                 return row[0]
 
     async def count_user(self, id)-> int:
-        """Функция выводит количество """
+        """Функция проверка есть ли пользователь в базе данных"""
         pool = self.conn
         async with pool.cursor() as cursor:
-            await cursor.execute(f"SELECT COUNT(*) FROM users.users WHERE users_id = {id} ")
+            await cursor.execute(f"SELECT 1 FROM users.users WHERE users_id = '{id}' LIMIT 1")
             for row in await cursor.fetchall():
                 return row[0]       
 
@@ -81,11 +81,19 @@ class DataBase:
                 return row[1]
             
     async def add_log(self, chat_id:int , user_id:int , user_full_name:str, telegram_object:str, content:str):
-        """Функция добовляет новых пользователей в базу данных"""
+        """Функция для логирования"""
         pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"INSERT INTO users.logs (chat_id, user_id, user_full_name, telegram_object, content)\
                               VALUES('{chat_id}', '{user_id}', '{user_full_name}', '{telegram_object}', '{content}')")
-            
+    
+    async def suumme(self, id, object):
+        """Функция выводит с таблицы _task_users по id все числа"""
+        pool = self.conn
+        async with pool.cursor() as cur:
+            await cur.execute(f"SELECT * FROM users.{object}_task_users WHERE users_id = {id}")
+            for row in await cur.fetchall():
+                return row[1:]
 
+            
 db = DataBase()

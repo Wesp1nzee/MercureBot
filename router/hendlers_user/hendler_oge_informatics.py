@@ -2,9 +2,8 @@ from aiogram import Router, F
 from aiogram.types import CallbackQuery, InputMediaPhoto
 from aiogram.fsm.context import FSMContext
 
-from database.cache import cache
-from lexicon.dict_task_number import container
-from keyboards.inlain import ikb
+from lexicon.dict_task_number_inf import container_inf
+from keyboards.inlain_users import ikb
 from fsm import StateMachine
 from callback_factory import FactoryTask
 from database.datacoonect import db
@@ -29,23 +28,16 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
     task_number = callback_data.task_number
     await state.update_data(task_number = task_number)
     task_count = await db.chek_count(callback.from_user.id,'informatics',task_number)
+    object = callback_data.object
+    await state.update_data(object=object)
     
-    if await cache.check_key(task_number, task_count):
-        image_id = await cache.check_key(task_number, task_count)
-
-    else:
-        await cache.update_val(key_1=task_number,
-                               key_2=task_count,
-                               val=await db.get_task(object="informatics", id=task_count, task_number=task_number))
-        image_id = await cache.check_key(task_number, task_count)
-
+    image_id = await db.get_task(object="informatics", id=task_count, task_number=task_number)
     await callback.message.answer_photo(
         photo=image_id,
-        protect_content=True,
-        reply_markup = await ikb.create_kb_pagination(
+        # protect_content=True,
+        reply_markup = await ikb.create_kb_pagination_inf(
             task_number=task_number,
             task_count = task_count,
-            object = "informatics"
             )
     )
 
@@ -59,27 +51,19 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext):
     task_number = user_data["task_number"]
     task_count = await db.chek_count(callback.from_user.id,'informatics',task_number)
 
-    if await cache.check_key(task_number, task_count):
-        image_id = await cache.check_key(task_number, task_count)
-
-    else:
-        await cache.update_val(key_1=task_number,
-                               key_2=task_count,
-                               val=await db.get_task(object="informatics", id=task_count, task_number=task_number))
-        image_id = await cache.check_key(task_number, task_count)
-
-    if task_count+1 < await container.get_item(task_number):
+    if task_count+1 < await container_inf.get_item(task_number):
         await db.update_user_task(callback.from_user.id, 'informatics', task_number, sign="+")
         task_count = await db.chek_count(callback.from_user.id,'informatics',task_number)
-                
+
+        image_id = await db.get_task(object="informatics", id=task_count, task_number=task_number)  
+
         await callback.message.edit_media(
         media=InputMediaPhoto( 
             media=image_id,
             ),
-        reply_markup = await ikb.create_kb_pagination(
+        reply_markup = await ikb.create_kb_pagination_inf(
             task_number=task_number,
             task_count=task_count,
-            object='informatics'
             )
         )
         
@@ -96,27 +80,19 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext):
     task_number = user_data["task_number"]
     task_count = await db.chek_count(callback.from_user.id,'informatics',task_number)
 
-    if await cache.check_key(task_number, task_count):
-        image_id = await cache.check_key(task_number, task_count)
-
-    else:
-        await cache.update_val(key_1=task_number,
-                               key_2=task_count,
-                               val=await db.get_task(object="informatics", id=task_count, task_number=task_number))
-        image_id = await cache.check_key(task_number, task_count)
-
     if task_count-1 >= 1:
         await db.update_user_task(callback.from_user.id, 'informatics', task_number, sign="-" )
         task_count = await db.chek_count(callback.from_user.id,'informatics',task_number)
 
+        image_id = await db.get_task(object="informatics", id=task_count, task_number=task_number)
+        
         await callback.message.edit_media(
         media=InputMediaPhoto( 
             media=image_id,
             ),
-        reply_markup = await ikb.create_kb_pagination(
+        reply_markup = await ikb.create_kb_pagination_inf(
             task_number=task_number, 
             task_count=task_count,
-            object='informatics'
             )
         )
 

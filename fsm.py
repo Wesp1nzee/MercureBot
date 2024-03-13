@@ -16,4 +16,7 @@ class StateMachine(StatesGroup):
     theory_physics = State()
     task_selection_physics = State()
     leaf_task_physics = State()
+
+    statistics = State()
+    error_message = State()
     

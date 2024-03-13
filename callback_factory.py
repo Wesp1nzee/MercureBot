@@ -8,3 +8,8 @@ class FactoryTask(CallbackData, prefix='task'):
     task_count:Optional[int] = None
     direction:Optional[str] = None
     decision:Optional[str] = None
+
+class FactoryError(CallbackData, prefix='task'):
+    object: str 
+    task_number:int
+    task_count:int

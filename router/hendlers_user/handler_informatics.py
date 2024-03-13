@@ -1,6 +1,6 @@
 from typing import Union
 
-from keyboards.inlain import ikb
+from keyboards.inlain_users import ikb
 from lexicon.lexicon import LEXICON_INFORMATIC
 from fsm import StateMachine
 
