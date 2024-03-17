@@ -18,5 +18,8 @@ class StateMachine(StatesGroup):
     leaf_task_physics = State()
 
     statistics = State()
+    statistics_phy = State()
+    statistics_inf = State()
+    
     error_message = State()
     

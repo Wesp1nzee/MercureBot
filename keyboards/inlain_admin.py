@@ -6,7 +6,7 @@ class IKB_Admin:
     async def create_keyboard_menu_start(self):
         return InlineKeyboardMarkup(inline_keyboard=[
             [
-                InlineKeyboardButton(text='Статистика', callback_data='static'),
+                InlineKeyboardButton(text='Обновить', callback_data='update'),
             ]
         ])
     

@@ -4,6 +4,7 @@ import aiomysql
 import sys 
 
 from config import HOST, USER, PASSWORD, DATABASE, PORT
+from logs import logger
 
 
 class DataBase:
@@ -21,10 +22,10 @@ class DataBase:
                                         autocommit=True,
                                         loop=loop)
         except Error as e:
-            print(f'CONNECTION ERROR: {e}')
+            logger.error(f'CONNECTION ERROR: {e}')
             sys.exit(1)
         else:
-            print('CONNECTION SUCCESSFULL')
+            logger.info('CONNECTION SUCCESSFULL')
 
     async def add_user(self, id, url, full_name):
         """Функция добовляет новых пользователей в базу данных"""
@@ -72,28 +73,60 @@ class DataBase:
             for row in await cur.fetchall():
                 return row[1]
 
-    async def get_task(self, object, id, task_number)-> str:
-        """Функция выдаёт id задачи"""
+    async def get_task_phy(self, task_number)-> str:
+        """Функция выдаёт id задачи по физике"""
         pool = self.conn
+        res = []
         async with pool.cursor() as cur:
-            await cur.execute(f"SELECT id, task_{task_number} FROM users.{object}_task WHERE (id) = ({id})")
-            for row in await cur.fetchall():
-                return row[1]
+            await cur.execute(f"SELECT task_{task_number} FROM users.physics_task;")
+            for i in await cur.fetchall():
+                if i[0]:
+                    res.append(i[0])
+            return res
+        
+    async def get_task_inf(self, task_number)-> str:
+        """Функция выдаёт id задачи по информатике"""
+        pool = self.conn
+        res = []
+        async with pool.cursor() as cur:
+            await cur.execute(f"SELECT task_{task_number} FROM users.informatics_task;")
+            for i in await cur.fetchall():
+                if i[0]:
+                    res.append(i[0])
+            return res
             
     async def add_log(self, chat_id:int , user_id:int , user_full_name:str, telegram_object:str, content:str):
         """Функция для логирования"""
         pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"INSERT INTO users.logs (chat_id, user_id, user_full_name, telegram_object, content)\
-                              VALUES('{chat_id}', '{user_id}', '{user_full_name}', '{telegram_object}', '{content}')")
-    
-    async def suumme(self, id, object):
+                              VALUES(%s, %s, %s, %s, %s)", (str(chat_id), str(user_id), user_full_name, telegram_object, content))
+            
+    async def get_data(self, user_id):
+        """Выводит дату регестрациии пользователя"""
+        pool = self.conn
+        async with pool.cursor() as cur:
+            await cur.execute(f"SELECT users_id, data  FROM users.users WHERE (users_id) = ({user_id})")
+            for row in await cur.fetchall():
+                return row[1]
+
+    async def get_task_users(self, id, object):
         """Функция выводит с таблицы _task_users по id все числа"""
         pool = self.conn
         async with pool.cursor() as cur:
             await cur.execute(f"SELECT * FROM users.{object}_task_users WHERE users_id = {id}")
             for row in await cur.fetchall():
                 return row[1:]
+    
+    async def count_user_for_admin(self):
+        """Количество всех пользователей"""
+        pool = self.conn
+        async with pool.cursor() as cur:
+            await cur.execute("SELECT count(*) FROM users.users")
+            for row in await cur.fetchall():
+                return row[0]
+            
+    
 
             
 db = DataBase()

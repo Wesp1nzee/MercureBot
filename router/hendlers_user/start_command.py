@@ -17,7 +17,7 @@ router = Router()
 @router.message(CommandStart())
 async def start_command(message: Message, state: FSMContext):
     await message.answer(
-        f"Привет, {message.from_user.full_name}! {LEXICON['/start']}",
+        f"Привет, {message.from_user.full_name}! {LEXICON}",
         reply_markup= await ikb.create_keyboard_menu_start()
     )
     #Проверка есть ли пользоваетль в БД если нет, то добовляет

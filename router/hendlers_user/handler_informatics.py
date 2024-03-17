@@ -8,26 +8,29 @@ from aiogram import Router, F
 from aiogram.types import CallbackQuery, Message 
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
+from aiogram.exceptions import TelegramBadRequest
 
 
 router = Router()
 
 #Пользователь выбрал информатику
 @router.message(Command(commands="informatics"))
-@router.callback_query(F.data == "back_informatics")
+@router.callback_query(F.data == "back_informatics", StateMachine.theory_informatics)
+@router.callback_query(F.data == "back_informatics", StateMachine.task_selection_informatics)
 @router.callback_query(F.data == "informatics:section", StateMachine.menu)
 async def informatics(query_message: Union[CallbackQuery, Message], state: FSMContext):
 
     if isinstance(query_message, CallbackQuery):
         await query_message.message.edit_text(
-            "Тут ты можешь выбрать конспект или задачи из ОГЭ",    
+            text=LEXICON_INFORMATIC['introduction'],   
             reply_markup = await ikb.create_kb_informatics()
         )
         await query_message.answer()
 
+
     if isinstance(query_message, Message):
         await query_message.answer(
-            "Тут ты можешь выбрать конспект или задачи из ОГЭ",    
+            text=LEXICON_INFORMATIC['introduction'],    
             reply_markup = await ikb.create_kb_informatics()
         )
         await query_message.delete()
@@ -36,10 +39,16 @@ async def informatics(query_message: Union[CallbackQuery, Message], state: FSMCo
     
 @router.callback_query(F.data == 'informatics_theory', StateMachine.informatics)
 async def informatics_theory(callback: CallbackQuery, state: FSMContext):
-
-    await callback.message.edit_text(
-        f"{LEXICON_INFORMATIC['theory']}",
-        reply_markup = await ikb.create_kb_informatics_url()
-    )
+    try:
+        await callback.message.edit_text(
+            text=LEXICON_INFORMATIC['theory'],
+            reply_markup = await ikb.create_kb_informatics_url()
+        )
+    except TelegramBadRequest:
+        await callback.message.answer(
+            "Тут ты можешь выбрать конспект или задачи из ОГЭ",    
+            reply_markup = await ikb.create_kb_informatics()
+        )
+        await callback.message.delete()
     
     await state.set_state(StateMachine.theory_informatics)

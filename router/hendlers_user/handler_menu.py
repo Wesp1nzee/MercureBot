@@ -4,9 +4,10 @@ from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
+from aiogram.exceptions import TelegramBadRequest
 
 from keyboards.inlain_users import ikb
-from lexicon.lexicon import LEXICON, generate_tasks_string
+from lexicon.lexicon import LEXICON, MENU
 from fsm import StateMachine
 
 router = Router()
@@ -18,33 +19,17 @@ router = Router()
 async def message_menu(query_message: Union[CallbackQuery, Message], state: FSMContext):
     if isinstance(query_message, CallbackQuery):
         await query_message.message.edit_text(
-            "⬇️Выбери что тебе интересно⬇️",    
+            text=MENU,        
             reply_markup= await ikb.create_kd_menu()
             )
         
     if isinstance(query_message, Message):
         await query_message.answer(
-            "⬇️Выбери что тебе интересно⬇️",    
+            text=MENU,    
             reply_markup= await ikb.create_kd_menu()
             )
     
     await state.set_state(StateMachine.menu)
-
-@router.message(Command(commands = 'help'))
-@router.callback_query(F.data == 'help')
-async def help_command(query_message: Union[CallbackQuery, Message]):
-    if isinstance(query_message, CallbackQuery):
-        await query_message.message.edit_text(
-            f"{LEXICON['/help']}",    
-            reply_markup= await ikb.create_kb_help()
-            )
-        
-    if isinstance(query_message, Message):
-        await query_message.answer(
-            f"{LEXICON['/help']}",    
-            reply_markup= await ikb.create_kb_help()
-            )
-
 
 @router.callback_query(F.data == 'plug')
 async def callbacks_profile(callback: CallbackQuery):
@@ -56,7 +41,6 @@ async def send_echo(message: Message):
     try:
         await message.answer("Я не знаю что на это ответить🤷:")
         await message.send_copy(chat_id=message.chat.id)
-        await message.answer("Если вам нужна помощь напишите команду /help")
     except TypeError:
         await message.reply(
             text='Я не знаю что на это ответить🤷'

@@ -12,21 +12,25 @@ from database.datacoonect import db
 
 from router.conect_hendlers_user import connect_client
 from router.connect_hendlers_admin import connect_admin
-from logs import LoggerMiddleware
+from logger_middlewares import LoggerMiddleware
+from logs import logger
+from database.conteiner_fileid import container_fileid
 
 loop = asyncio.get_event_loop()
-logger = logging.getLogger(__name__)
 
 async def main():
     #Создаем соеденение с БД
     await db.create_connection(loop)
     await container_inf.create_container()
     await container_phy.create_container()
-    
+    await container_fileid.create_container_inf()
+    await container_fileid.create_container_phy()
+
     logging.basicConfig(
         level=logging.INFO,
         format='%(filename)s:%(lineno)d #%(levelname)-8s '
                '[%(asctime)s] - %(name)s - %(message)s')
+
     logger.info('Starting bot')
     
     bot = Bot(token=API_, parse_mode='HTML')

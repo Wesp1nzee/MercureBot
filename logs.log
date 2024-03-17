@@ -1,0 +1,1004 @@
+2024-03-17 at 11:30:44 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 11:30:44 | INFO | bot.py:31 | Starting bot
+2024-03-17 at 11:31:17 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFx2Xtdl4LxT76S4gpBpGe4oRHlupXAAL_1jEb5StxS4a9ILn3uOR0AQADAgADeAADNAQ
+2024-03-17 at 11:31:19 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFyGXtdmCw98wuw9vWCJ9XHrwapfyLAAPXMRvlK3FLcqqL9pKe-FoBAAMCAAN4AAM0BA
+2024-03-17 at 11:31:20 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFyWXtdmHSTOrILuOpTpQ4VPPJDxsNAAIB1zEb5StxS2gbsDkMIvP2AQADAgADeAADNAQ
+2024-03-17 at 11:31:21 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFymXtdmIBm-e5PV4prdylX0LX1Nw2AAIC1zEb5StxS4lSIAhE_O3AAQADAgADeAADNAQ
+2024-03-17 at 11:31:23 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFy2XtdmNswyav0zNZHnYVk_ROJvW3AAID1zEb5StxS_S9K4bTWnmbAQADAgADeAADNAQ
+2024-03-17 at 11:31:26 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFzGXtdmQbBycbZAc44LfPlAf34WVrAAIE1zEb5StxS2t5peVBNL_kAQADAgADeAADNAQ
+2024-03-17 at 11:31:29 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFzWXtdmUfQnmxEwldXrNfJfxuc5P2AAIF1zEb5StxS_c2z8mc1HHRAQADAgADeAADNAQ
+2024-03-17 at 11:31:30 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFzmXtdmfYZE23_XHj0NBiVykobyqfAAIG1zEb5StxS5PEkXrGkNCdAQADAgADeAADNAQ
+2024-03-17 at 11:31:31 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFz2XtdmirWvQWjorn4F9iyFYjGFSrAAIH1zEb5StxSxdOAV2nudd5AQADAgADeAADNAQ
+2024-03-17 at 11:31:58 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFzmXtdmfYZE23_XHj0NBiVykobyqfAAIG1zEb5StxS5PEkXrGkNCdAQADAgADeAADNAQ
+2024-03-17 at 11:32:02 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIFz2XtdmirWvQWjorn4F9iyFYjGFSrAAIH1zEb5StxSxdOAV2nudd5AQADAgADeAADNAQ
+2024-03-17 at 11:32:05 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIF0GXtdmnM5TtBC7LkuiKdK81v-3xaAAII1zEb5StxS8iGFmKI41QvAQADAgADeAADNAQ
+2024-03-17 at 11:32:09 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIF0WXtdmpRfK66aCVqUaspEzr3rZ-FAAIJ1zEb5StxS3l1MbW3YHF0AQADAgADeAADNAQ
+2024-03-17 at 11:32:12 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIF0mXtdmxE_7iW5Y0j-UBtDigx3LnOAAIK1zEb5StxSwZMiuyElJWIAQADAgADeAADNAQ
+2024-03-17 at 11:32:13 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIF02Xtdm3WWIJj2NWHyYLVh-G1slWOAAIL1zEb5StxS5VrzjyBJLg8AQADAgADeAADNAQ
+2024-03-17 at 11:32:13 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIF1GXtdm7iXNdrxkYzHyZyhlxgFYdSAAIM1zEb5StxS1LEgMwhWnYNAQADAgADeAADNAQ
+2024-03-17 at 11:32:14 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIF1WXtdm_kKo4Xz6OW0UhtoVW5Mr1fAAIN1zEb5StxS3-qHhbiPXleAQADAgADeAADNAQ
+2024-03-17 at 11:32:37 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4oHjbAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADdwADNAQ
+2024-03-17 at 11:32:39 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4oHjbAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADdwADNAQ
+2024-03-17 at 11:32:39 | ERROR | error_handling.py:42 | 
+	aiogram ошибка: TelegramBadRequest - Неверный запрос
+	event ошибка: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+
+	Message: None
+	Update: update_id=659284298 message=None edited_message=None channel_post=None edited_channel_post=None inline_query=None chosen_inline_result=None callback_query=CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, username='asdelrt', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), chat_instance='-844508565278419352', message=Message(message_id=4098, date=datetime.datetime(2024, 3, 17, 4, 32, 37, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='private', title=None, username='asdelrt', first_name='Алексей', last_name=None, is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=6412893761, is_bot=True, first_name='Mercury', last_name=None, username='MercurySigmaBot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=1710649959, has_protected_content=True, media_group_id=None, author_signature=None, text=None, entities=None, animation=None, audio=None, document=None, photo=[PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADcwADNAQ', file_unique_id='AQADXN8xG7QogUt4', width=90, height=30, file_size=546), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADbQADNAQ', file_unique_id='AQADXN8xG7QogUty', width=320, height=107, file_size=4826), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADeAADNAQ', file_unique_id='AQADXN8xG7QogUt9', width=800, height=267, file_size=20492), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADeQADNAQ', file_unique_id='AQADXN8xG7QogUt-', width=1280, height=427, file_size=41007), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADdwADNAQ', file_unique_id='AQADXN8xG7QogUt8', width=1500, height=500, file_size=43741)], sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='«', url=None, callback_data='task:informatics:2:7:Back:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='7/81', url=None, callback_data='plug', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='»', url=None, callback_data='task:informatics:2:7:Next:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='✅Ответ', url=None, callback_data='task:informatics:2:7::1', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🚨Сообщить об ошибке🚨', url=None, callback_data='task:error_message:2:7', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🔙Назад', url=None, callback_data='back_informatics_task', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]])), inline_message_id=None, data='task:informatics:2:7:Next:', game_short_name=None) shipping_query=None pre_checkout_query=None poll=None poll_answer=None my_chat_member=None chat_member=None chat_join_request=None
+
+Traceback (most recent call last):
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\bot.py", line 48, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000016F856A65C0>
+    │       └ <function run at 0x0000016FFF5A9F80>
+    └ <module 'asyncio' from 'C:\\Users\\Aleksey\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000016F82FE9B70>
+           │      └ <function Runner.run at 0x0000016FFF619EE0>
+           └ <asyncio.runners.Runner object at 0x0000016F855FBD10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at c:\Users\Aleksey\Desktop\MercureBot\bot.py:45> wait_for=<Future pending c...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000016FFF6179C0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000016F855FBD10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000016FFF6E3920>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000016FFF619760>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000016FFF563100>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,)}
+                     │    │           │    └ Update(update_id=659284298, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+                     │    └ <function Dispatcher.feed_update at 0x0000016F851DFD80>
+                     └ <Dispatcher '0x16f856012d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000016F851DE700>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F856020D0>
+                     └ <Dispatcher '0x16f856012d0'>
+> File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284298, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000016F856D1ED0>, functools...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284298, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000016F856D1F50>, functools.partial(<logger_middl...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284298, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<logger_middlewares.LoggerMiddleware object at 0x0000016F85AA1C10>, <function TelegramEventObserver.trigger...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\logger_middlewares.py", line 119, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284298, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function TelegramEventObserver.trigger at 0x0000016F85BC11C0>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │             └ Update(update_id=659284298, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function CallableObject.call at 0x0000016F84FF7380>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x16f856012d0'>>, Update(update_id=659284298, messa...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │    │                           │                  └ CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │    │                           └ 'callback_query'
+                 │    └ <function Router.propagate_event at 0x0000016F851DF380>
+                 └ <Dispatcher '0x16f856012d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000016F85BC07C0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000016F851DE700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F856D0510>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000016F851DF420>
+                 └ <Dispatcher '0x16f856012d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                     │      │                           │                  └ CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │      │                           └ 'callback_query'
+                     │      └ <function Router.propagate_event at 0x0000016F851DF380>
+                     └ <Router '0x16f85619e90'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000016F85BC16C0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000016F851DE700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F85622690>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000016F851DF420>
+                 └ <Router '0x16f85619e90'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                     │        │       └ CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000016F851DE840>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F85622690>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │             └ CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 └ <function CallableObject.call at 0x0000016F85BC2200>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<function message_with_text at 0x0000016F856247C0>, CallbackQuery(id='8964249353287308496', from_user=User(...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\router\hendlers_user\hendler_oge_informatics.py", line 67, in message_with_text
+    await callback.message.edit_media(
+          │        │       └ <function Message.edit_media at 0x0000016F82F2D080>
+          │        └ Message(message_id=4098, date=datetime.datetime(2024, 3, 17, 4, 32, 37, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='p...
+          └ CallbackQuery(id='8964249353287308496', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+                 │   └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+                 └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000016F85601D50>
+                 └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x000...
+           │    └ ~TelegramType
+           └ <function cast at 0x0000016FFF5FD9E0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x0000016F8513DE40>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000016F85601D50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+          │                         │               └ 'Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current conte...
+          │                         └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+          └ <class 'aiogram.exceptions.TelegramBadRequest'>
+
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2024-03-17 at 11:33:41 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4oHjbAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADdwADNAQ
+2024-03-17 at 11:33:41 | ERROR | error_handling.py:42 | 
+	aiogram ошибка: TelegramBadRequest - Неверный запрос
+	event ошибка: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+
+	Message: None
+	Update: update_id=659284299 message=None edited_message=None channel_post=None edited_channel_post=None inline_query=None chosen_inline_result=None callback_query=CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, username='asdelrt', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), chat_instance='-844508565278419352', message=Message(message_id=4098, date=datetime.datetime(2024, 3, 17, 4, 32, 37, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='private', title=None, username='asdelrt', first_name='Алексей', last_name=None, is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=6412893761, is_bot=True, first_name='Mercury', last_name=None, username='MercurySigmaBot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=1710649959, has_protected_content=True, media_group_id=None, author_signature=None, text=None, entities=None, animation=None, audio=None, document=None, photo=[PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADcwADNAQ', file_unique_id='AQADXN8xG7QogUt4', width=90, height=30, file_size=546), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADbQADNAQ', file_unique_id='AQADXN8xG7QogUty', width=320, height=107, file_size=4826), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADeAADNAQ', file_unique_id='AQADXN8xG7QogUt9', width=800, height=267, file_size=20492), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADeQADNAQ', file_unique_id='AQADXN8xG7QogUt-', width=1280, height=427, file_size=41007), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADdwADNAQ', file_unique_id='AQADXN8xG7QogUt8', width=1500, height=500, file_size=43741)], sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='«', url=None, callback_data='task:informatics:2:7:Back:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='7/81', url=None, callback_data='plug', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='»', url=None, callback_data='task:informatics:2:7:Next:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='✅Ответ', url=None, callback_data='task:informatics:2:7::1', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🚨Сообщить об ошибке🚨', url=None, callback_data='task:error_message:2:7', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🔙Назад', url=None, callback_data='back_informatics_task', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]])), inline_message_id=None, data='task:informatics:2:7:Next:', game_short_name=None) shipping_query=None pre_checkout_query=None poll=None poll_answer=None my_chat_member=None chat_member=None chat_join_request=None
+
+Traceback (most recent call last):
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\bot.py", line 48, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000016F856A65C0>
+    │       └ <function run at 0x0000016FFF5A9F80>
+    └ <module 'asyncio' from 'C:\\Users\\Aleksey\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000016F82FE9B70>
+           │      └ <function Runner.run at 0x0000016FFF619EE0>
+           └ <asyncio.runners.Runner object at 0x0000016F855FBD10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at c:\Users\Aleksey\Desktop\MercureBot\bot.py:45> wait_for=<Future pending c...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000016FFF6179C0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000016F855FBD10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000016FFF6E3920>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000016FFF619760>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000016FFF563100>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,)}
+                     │    │           │    └ Update(update_id=659284299, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+                     │    └ <function Dispatcher.feed_update at 0x0000016F851DFD80>
+                     └ <Dispatcher '0x16f856012d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000016F851DE700>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F856020D0>
+                     └ <Dispatcher '0x16f856012d0'>
+> File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284299, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000016F856D1ED0>, functools...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284299, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000016F856D1F50>, functools.partial(<logger_middl...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284299, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<logger_middlewares.LoggerMiddleware object at 0x0000016F85AA1C10>, <function TelegramEventObserver.trigger...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\logger_middlewares.py", line 119, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284299, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function TelegramEventObserver.trigger at 0x0000016F85BC2020>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │             └ Update(update_id=659284299, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function CallableObject.call at 0x0000016F856CB600>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x16f856012d0'>>, Update(update_id=659284299, messa...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │    │                           │                  └ CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │    │                           └ 'callback_query'
+                 │    └ <function Router.propagate_event at 0x0000016F851DF380>
+                 └ <Dispatcher '0x16f856012d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000016F85BC1EE0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000016F851DE700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F856D0510>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000016F851DF420>
+                 └ <Dispatcher '0x16f856012d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                     │      │                           │                  └ CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │      │                           └ 'callback_query'
+                     │      └ <function Router.propagate_event at 0x0000016F851DF380>
+                     └ <Router '0x16f85619e90'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000016F85BC1BC0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000016F851DE700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F85622690>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000016F851DF420>
+                 └ <Router '0x16f85619e90'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                     │        │       └ CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000016F851DE840>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000016F85622690>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x16f856012d0'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000016F85601B50>,), 'bot': <aiogra...
+                 │             └ CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 └ <function CallableObject.call at 0x0000016F85BC1E40>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<function message_with_text at 0x0000016F856247C0>, CallbackQuery(id='8964249350185670178', from_user=User(...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\router\hendlers_user\hendler_oge_informatics.py", line 67, in message_with_text
+    await callback.message.edit_media(
+          │        │       └ <function Message.edit_media at 0x0000016F82F2D080>
+          │        └ Message(message_id=4098, date=datetime.datetime(2024, 3, 17, 4, 32, 37, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='p...
+          └ CallbackQuery(id='8964249350185670178', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+                 │   └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+                 └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000016F85601D50>
+                 └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x0000016F85601B50>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x000...
+           │    └ ~TelegramType
+           └ <function cast at 0x0000016FFF5FD9E0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x0000016F8513DE40>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000016F85601D50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+          │                         │               └ 'Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current conte...
+          │                         └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+          └ <class 'aiogram.exceptions.TelegramBadRequest'>
+
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2024-03-17 at 11:33:53 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 11:33:53 | INFO | bot.py:31 | Starting bot
+2024-03-17 at 11:33:58 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4oHjbAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADdwADNAQ
+2024-03-17 at 11:33:58 | ERROR | error_handling.py:42 | 
+	aiogram ошибка: TelegramBadRequest - Неверный запрос
+	event ошибка: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+
+	Message: None
+	Update: update_id=659284300 message=None edited_message=None channel_post=None edited_channel_post=None inline_query=None chosen_inline_result=None callback_query=CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, username='asdelrt', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), chat_instance='-844508565278419352', message=Message(message_id=4098, date=datetime.datetime(2024, 3, 17, 4, 32, 37, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='private', title=None, username='asdelrt', first_name='Алексей', last_name=None, is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=6412893761, is_bot=True, first_name='Mercury', last_name=None, username='MercurySigmaBot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=1710649959, has_protected_content=True, media_group_id=None, author_signature=None, text=None, entities=None, animation=None, audio=None, document=None, photo=[PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADcwADNAQ', file_unique_id='AQADXN8xG7QogUt4', width=90, height=30, file_size=546), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADbQADNAQ', file_unique_id='AQADXN8xG7QogUty', width=320, height=107, file_size=4826), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADeAADNAQ', file_unique_id='AQADXN8xG7QogUt9', width=800, height=267, file_size=20492), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADeQADNAQ', file_unique_id='AQADXN8xG7QogUt-', width=1280, height=427, file_size=41007), PhotoSize(file_id='AgACAgIAAxkDAAIQAmX2cmfCxXJbPAGySmvxcZAhwKWeAAJc3zEbtCiBS2yBVkVnpZiZAQADAgADdwADNAQ', file_unique_id='AQADXN8xG7QogUt8', width=1500, height=500, file_size=43741)], sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='«', url=None, callback_data='task:informatics:2:7:Back:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='7/81', url=None, callback_data='plug', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='»', url=None, callback_data='task:informatics:2:7:Next:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='✅Ответ', url=None, callback_data='task:informatics:2:7::1', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🚨Сообщить об ошибке🚨', url=None, callback_data='task:error_message:2:7', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🔙Назад', url=None, callback_data='back_informatics_task', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]])), inline_message_id=None, data='task:informatics:2:7:Next:', game_short_name=None) shipping_query=None pre_checkout_query=None poll=None poll_answer=None my_chat_member=None chat_member=None chat_join_request=None
+
+Traceback (most recent call last):
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\bot.py", line 48, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001FAB379A5C0>
+    │       └ <function run at 0x000001FAAEB49F80>
+    └ <module 'asyncio' from 'C:\\Users\\Aleksey\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001FAB13F5B70>
+           │      └ <function Runner.run at 0x000001FAAEBB9EE0>
+           └ <asyncio.runners.Runner object at 0x000001FAB379E1D0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at c:\Users\Aleksey\Desktop\MercureBot\bot.py:45> wait_for=<Future pending c...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001FAAEBB79C0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001FAB379E1D0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001FAAEC73920>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001FAAEBB9760>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001FAAEB03100>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,)}
+                     │    │           │    └ Update(update_id=659284300, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x000001FAB1098290>
+                     │    └ <function Dispatcher.feed_update at 0x000001FAB32CFD80>
+                     └ <Dispatcher '0x1fab1876e10'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001FAB32CE700>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FAB36F1610>
+                     └ <Dispatcher '0x1fab1876e10'>
+> File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284300, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x000001FAB37C6890>, functools...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284300, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x000001FAB37C6910>, functools.partial(<logger_middl...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284300, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<logger_middlewares.LoggerMiddleware object at 0x000001FAB37A18D0>, <function TelegramEventObserver.trigger...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\logger_middlewares.py", line 119, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284300, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function TelegramEventObserver.trigger at 0x000001FAB37BFF60>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │             └ Update(update_id=659284300, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function CallableObject.call at 0x000001FAB37BF7E0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x1fab1876e10'>>, Update(update_id=659284300, messa...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │    │                           │                  └ CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │    │                           └ 'callback_query'
+                 │    └ <function Router.propagate_event at 0x000001FAB32CF380>
+                 └ <Dispatcher '0x1fab1876e10'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001FAB37BF740>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001FAB32CE700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FAB37C4ED0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001FAB32CF420>
+                 └ <Dispatcher '0x1fab1876e10'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                     │      │                           │                  └ CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │      │                           └ 'callback_query'
+                     │      └ <function Router.propagate_event at 0x000001FAB32CF380>
+                     └ <Router '0x1fab13fa3d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001FAB37BF6A0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001FAB32CE700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FAB3712E10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001FAB32CF420>
+                 └ <Router '0x1fab13fa3d0'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                     │        │       └ CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │        └ <function TelegramEventObserver.trigger at 0x000001FAB32CE840>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FAB3712E10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x1fab1876e10'>, 'bots': (<aiogram.client.bot.Bot object at 0x000001FAB1098290>,), 'bot': <aiogra...
+                 │             └ CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 └ <function CallableObject.call at 0x000001FAB37BF600>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<function message_with_text at 0x000001FAB3714720>, CallbackQuery(id='8964249352170558125', from_user=User(...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\router\hendlers_user\hendler_oge_informatics.py", line 67, in message_with_text
+    await callback.message.edit_media(
+          │        │       └ <function Message.edit_media at 0x000001FAB0FDD080>
+          │        └ Message(message_id=4098, date=datetime.datetime(2024, 3, 17, 4, 32, 37, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='p...
+          └ CallbackQuery(id='8964249352170558125', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+                 │   └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+                 └ <aiogram.client.bot.Bot object at 0x000001FAB1098290>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x000001FAB1098290>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x000001FAB37A1D50>
+                 └ <aiogram.client.bot.Bot object at 0x000001FAB1098290>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x000001FAB1098290>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x000...
+           │    └ ~TelegramType
+           └ <function cast at 0x000001FAAEB9D9E0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x000001FAB322DE40>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x000001FAB37A1D50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+          │                         │               └ 'Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current conte...
+          │                         └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM4WXvEca07t3SWsJpM0RXQbT4o...
+          └ <class 'aiogram.exceptions.TelegramBadRequest'>
+
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2024-03-17 at 11:34:54 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 11:34:54 | INFO | bot.py:31 | Starting bot
+2024-03-17 at 11:34:59 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM5WXvEcwhPWNiW4ZYeFDbBlyFpt-PAAJg3zEbtCiBS35StLVezE0SAQADAgADdwADNAQ
+2024-03-17 at 11:35:02 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM5WXvEcwhPWNiW4ZYeFDbBlyFpt-PAAJg3zEbtCiBS35StLVezE0SAQADAgADdwADNAQ
+2024-03-17 at 11:35:02 | ERROR | error_handling.py:42 | 
+	aiogram ошибка: TelegramBadRequest - Неверный запрос
+	event ошибка: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+
+	Message: None
+	Update: update_id=659284304 message=None edited_message=None channel_post=None edited_channel_post=None inline_query=None chosen_inline_result=None callback_query=CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, username='asdelrt', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), chat_instance='-844508565278419352', message=Message(message_id=4102, date=datetime.datetime(2024, 3, 17, 4, 35, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='private', title=None, username='asdelrt', first_name='Алексей', last_name=None, is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=6412893761, is_bot=True, first_name='Mercury', last_name=None, username='MercurySigmaBot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=1710650101, has_protected_content=True, media_group_id=None, author_signature=None, text=None, entities=None, animation=None, audio=None, document=None, photo=[PhotoSize(file_id='AgACAgIAAxkDAAIQBmX2cvXaT4GvRvJlNyCQtXwsoxqkAAJg3zEbtCiBS35StLVezE0SAQADAgADcwADNAQ', file_unique_id='AQADYN8xG7QogUt4', width=90, height=30, file_size=544), PhotoSize(file_id='AgACAgIAAxkDAAIQBmX2cvXaT4GvRvJlNyCQtXwsoxqkAAJg3zEbtCiBS35StLVezE0SAQADAgADbQADNAQ', file_unique_id='AQADYN8xG7QogUty', width=320, height=107, file_size=4902), PhotoSize(file_id='AgACAgIAAxkDAAIQBmX2cvXaT4GvRvJlNyCQtXwsoxqkAAJg3zEbtCiBS35StLVezE0SAQADAgADeAADNAQ', file_unique_id='AQADYN8xG7QogUt9', width=800, height=267, file_size=20742), PhotoSize(file_id='AgACAgIAAxkDAAIQBmX2cvXaT4GvRvJlNyCQtXwsoxqkAAJg3zEbtCiBS35StLVezE0SAQADAgADeQADNAQ', file_unique_id='AQADYN8xG7QogUt-', width=1280, height=427, file_size=41164), PhotoSize(file_id='AgACAgIAAxkDAAIQBmX2cvXaT4GvRvJlNyCQtXwsoxqkAAJg3zEbtCiBS35StLVezE0SAQADAgADdwADNAQ', file_unique_id='AQADYN8xG7QogUt8', width=1500, height=500, file_size=43761)], sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='«', url=None, callback_data='task:informatics:2:11:Back:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='11/81', url=None, callback_data='plug', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='»', url=None, callback_data='task:informatics:2:11:Next:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='✅Ответ', url=None, callback_data='task:informatics:2:11::1', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🚨Сообщить об ошибке🚨', url=None, callback_data='task:error_message:2:11', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🔙Назад', url=None, callback_data='back_informatics_task', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]])), inline_message_id=None, data='task:informatics:2:11:Next:', game_short_name=None) shipping_query=None pre_checkout_query=None poll=None poll_answer=None my_chat_member=None chat_member=None chat_join_request=None
+
+Traceback (most recent call last):
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\bot.py", line 48, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000026E89CDA5C0>
+    │       └ <function run at 0x0000026E84FE9F80>
+    └ <module 'asyncio' from 'C:\\Users\\Aleksey\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000026E878F9B70>
+           │      └ <function Runner.run at 0x0000026E85059EE0>
+           └ <asyncio.runners.Runner object at 0x0000026E89C33450>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at c:\Users\Aleksey\Desktop\MercureBot\bot.py:45> wait_for=<Future pending c...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000026E850579C0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000026E89C33450>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000026E85123920>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000026E85059760>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000026E84FA3100>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,)}
+                     │    │           │    └ Update(update_id=659284304, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+                     │    └ <function Dispatcher.feed_update at 0x0000026E8980FD80>
+                     └ <Dispatcher '0x26e89d04510'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000026E8980E700>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89C320D0>
+                     └ <Dispatcher '0x26e89d04510'>
+> File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284304, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000026E89D06650>, functools...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284304, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000026E89D066D0>, functools.partial(<logger_middl...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284304, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<logger_middlewares.LoggerMiddleware object at 0x0000026E89C78C90>, <function TelegramEventObserver.trigger...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\logger_middlewares.py", line 119, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284304, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function TelegramEventObserver.trigger at 0x0000026E8A1F4B80>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │             └ Update(update_id=659284304, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function CallableObject.call at 0x0000026E8A1F4EA0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x26e89d04510'>>, Update(update_id=659284304, messa...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │    │                           │                  └ CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │    │                           └ 'callback_query'
+                 │    └ <function Router.propagate_event at 0x0000026E8980F380>
+                 └ <Dispatcher '0x26e89d04510'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000026E8A1F4FE0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000026E8980E700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89D04D10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000026E8980F420>
+                 └ <Dispatcher '0x26e89d04510'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                     │      │                           │                  └ CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │      │                           └ 'callback_query'
+                     │      └ <function Router.propagate_event at 0x0000026E8980F380>
+                     └ <Router '0x26e87d75c50'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000026E8A1F5120>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000026E8980E700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89C52C50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000026E8980F420>
+                 └ <Router '0x26e87d75c50'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                     │        │       └ CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000026E8980E840>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89C52C50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │             └ CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 └ <function CallableObject.call at 0x0000026E8A1F42C0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<function message_with_text at 0x0000026E89C54720>, CallbackQuery(id='8964249350997957115', from_user=User(...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\router\hendlers_user\hendler_oge_informatics.py", line 67, in message_with_text
+    await callback.message.edit_media(
+          │        │       └ <function Message.edit_media at 0x0000026E874DD080>
+          │        └ Message(message_id=4102, date=datetime.datetime(2024, 3, 17, 4, 35, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='priva...
+          └ CallbackQuery(id='8964249350997957115', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+                 │   └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM5WXvEcwhPWNiW4ZYeFDbBlyFp...
+                 └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM5WXvEcwhPWNiW4ZYeFDbBlyFp...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000026E87D75410>
+                 └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM5WXvEcwhPWNiW4ZYeFDbBlyFp...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x000...
+           │    └ ~TelegramType
+           └ <function cast at 0x0000026E8503D9E0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x0000026E8976DE40>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000026E87D75410>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+          │                         │               └ 'Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current conte...
+          │                         └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIM5WXvEcwhPWNiW4ZYeFDbBlyFp...
+          └ <class 'aiogram.exceptions.TelegramBadRequest'>
+
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2024-03-17 at 11:35:07 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIFMmXtc7n3s9nVCLI5tJqLqKAb9zzZAAIp1TEb5StxSzIn8VggHYMjAQADAgADeAADNAQ
+2024-03-17 at 11:35:21 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIFMmXtc7n3s9nVCLI5tJqLqKAb9zzZAAIp1TEb5StxSzIn8VggHYMjAQADAgADeAADNAQ
+2024-03-17 at 11:35:21 | ERROR | error_handling.py:42 | 
+	aiogram ошибка: TelegramBadRequest - Неверный запрос
+	event ошибка: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+
+	Message: None
+	Update: update_id=659284308 message=None edited_message=None channel_post=None edited_channel_post=None inline_query=None chosen_inline_result=None callback_query=CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, username='asdelrt', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), chat_instance='-844508565278419352', message=Message(message_id=4104, date=datetime.datetime(2024, 3, 17, 4, 35, 7, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='private', title=None, username='asdelrt', first_name='Алексей', last_name=None, is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=6412893761, is_bot=True, first_name='Mercury', last_name=None, username='MercurySigmaBot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=1710650109, has_protected_content=True, media_group_id=None, author_signature=None, text=None, entities=None, animation=None, audio=None, document=None, photo=[PhotoSize(file_id='AgACAgIAAxkDAAIQCGX2cv09xsO9WbNwBklROKCgjbZ3AAIp1TEb5StxSzIn8VggHYMjAQADAgADcwADNAQ', file_unique_id='AQADKdUxG-UrcUt4', width=90, height=42, file_size=893), PhotoSize(file_id='AgACAgIAAxkDAAIQCGX2cv09xsO9WbNwBklROKCgjbZ3AAIp1TEb5StxSzIn8VggHYMjAQADAgADbQADNAQ', file_unique_id='AQADKdUxG-UrcUty', width=320, height=151, file_size=10653), PhotoSize(file_id='AgACAgIAAxkDAAIQCGX2cv09xsO9WbNwBklROKCgjbZ3AAIp1TEb5StxSzIn8VggHYMjAQADAgADeAADNAQ', file_unique_id='AQADKdUxG-UrcUt9', width=604, height=285, file_size=25429)], sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='«', url=None, callback_data='task:informatics:9:1:Back:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='1/84', url=None, callback_data='plug', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='»', url=None, callback_data='task:informatics:9:1:Next:', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='✅Ответ', url=None, callback_data='task:informatics:9:1::1', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🚨Сообщить об ошибке🚨', url=None, callback_data='task:error_message:9:1', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='🔙Назад', url=None, callback_data='back_informatics_task', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]])), inline_message_id=None, data='task:informatics:9:1:Next:', game_short_name=None) shipping_query=None pre_checkout_query=None poll=None poll_answer=None my_chat_member=None chat_member=None chat_join_request=None
+
+Traceback (most recent call last):
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\bot.py", line 48, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000026E89CDA5C0>
+    │       └ <function run at 0x0000026E84FE9F80>
+    └ <module 'asyncio' from 'C:\\Users\\Aleksey\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000026E878F9B70>
+           │      └ <function Runner.run at 0x0000026E85059EE0>
+           └ <asyncio.runners.Runner object at 0x0000026E89C33450>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at c:\Users\Aleksey\Desktop\MercureBot\bot.py:45> wait_for=<Future pending c...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000026E850579C0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000026E89C33450>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000026E85123920>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000026E85059760>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000026E84FA3100>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,)}
+                     │    │           │    └ Update(update_id=659284308, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+                     │    └ <function Dispatcher.feed_update at 0x0000026E8980FD80>
+                     └ <Dispatcher '0x26e89d04510'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000026E8980E700>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89C320D0>
+                     └ <Dispatcher '0x26e89d04510'>
+> File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284308, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000026E89D06650>, functools...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284308, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000026E89D066D0>, functools.partial(<logger_middl...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284308, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ functools.partial(<logger_middlewares.LoggerMiddleware object at 0x0000026E89C78C90>, <function TelegramEventObserver.trigger...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\logger_middlewares.py", line 119, in __call__
+    return await handler(event, data)
+                 │       │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │       └ Update(update_id=659284308, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function TelegramEventObserver.trigger at 0x0000026E895E7380>
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │             └ Update(update_id=659284308, message=None, edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None...
+                 └ <function CallableObject.call at 0x0000026E89CFFD80>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x26e89d04510'>>, Update(update_id=659284308, messa...
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │    │                           │                  └ CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │    │                           └ 'callback_query'
+                 │    └ <function Router.propagate_event at 0x0000026E8980F380>
+                 └ <Dispatcher '0x26e89d04510'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000026E89CFF420>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000026E8980E700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89D04D10>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000026E8980F420>
+                 └ <Dispatcher '0x26e89d04510'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                     │      │                           │                  └ CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │      │                           └ 'callback_query'
+                     │      └ <function Router.propagate_event at 0x0000026E8980F380>
+                     └ <Router '0x26e87d75c50'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │        │                     │               └ CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000026E89CFF7E0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000026E8980E700>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89C52C50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000026E8980F420>
+                 └ <Router '0x26e87d75c50'>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                     │        │       └ CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000026E8980E840>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000026E89C52C50>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'dispatcher': <Dispatcher '0x26e89d04510'>, 'bots': (<aiogram.client.bot.Bot object at 0x0000026E87D754D0>,), 'bot': <aiogra...
+                 │             └ CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+                 └ <function CallableObject.call at 0x0000026E8A1F4360>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 └ functools.partial(<function message_with_text at 0x0000026E89C54720>, CallbackQuery(id='8964249350998239750', from_user=User(...
+
+  File "c:\Users\Aleksey\Desktop\MercureBot\router\hendlers_user\hendler_oge_informatics.py", line 67, in message_with_text
+    await callback.message.edit_media(
+          │        │       └ <function Message.edit_media at 0x0000026E874DD080>
+          │        └ Message(message_id=4104, date=datetime.datetime(2024, 3, 17, 4, 35, 7, tzinfo=TzInfo(UTC)), chat=Chat(id=6382119242, type='pr...
+          └ CallbackQuery(id='8964249350998239750', from_user=User(id=6382119242, is_bot=False, first_name='Алексей', last_name=None, use...
+
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+                 │   └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIFMmXtc7n3s9nVCLI5tJqLqKAb9...
+                 └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIFMmXtc7n3s9nVCLI5tJqLqKAb9...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000026E87D75410>
+                 └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIFMmXtc7n3s9nVCLI5tJqLqKAb9...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x0000026E87D754D0>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x000...
+           │    └ ~TelegramType
+           └ <function cast at 0x0000026E8503D9E0>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x0000026E8976DE40>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x0000026E87D75410>
+  File "C:\Users\Aleksey\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+          │                         │               └ 'Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current conte...
+          │                         └ EditMessageMedia(media=InputMediaPhoto(type=<InputMediaType.PHOTO: 'photo'>, media='AgACAgIAAxkDAAIFMmXtc7n3s9nVCLI5tJqLqKAb9...
+          └ <class 'aiogram.exceptions.TelegramBadRequest'>
+
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2024-03-17 at 11:36:55 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 11:36:55 | INFO | bot.py:31 | Starting bot
+2024-03-17 at 11:37:13 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIKaGXthScC9iUjwXLbt5JKmUHX2qN2AAIb1TEbpWFxSxbjccO261HVAQADAgADeAADNAQ
+2024-03-17 at 11:37:14 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIKaWXthSkoFA1o_Jp5bkoQV5w4r4W4AAIc1TEbpWFxS1w0MjSpyC23AQADAgADeAADNAQ
+2024-03-17 at 11:37:15 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIKamXthSqJ7RdhPViCLtNNWvpv8J16AAId1TEbpWFxS_WgiO0HpyNgAQADAgADeAADNAQ
+2024-03-17 at 11:37:16 | INFO | handler_oge_physics.py:74 | AgACAgIAAxkDAAIKa2XthSuwiEiRW8Lki1eFsmJIVwkFAAIe1TEbpWFxSzEmjE-0PVFnAQADAgADeQADNAQ
+2024-03-17 at 11:39:01 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 11:39:01 | INFO | bot.py:31 | Starting bot
+2024-03-17 at 11:39:06 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIFwGXtdftqJ5Wcu9eYr_dJjSLgS8UGAAL41jEb5StxS049tP5AjWKGAQADAgADeQADNAQ
+2024-03-17 at 11:39:07 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIFwWXtdfwxfaD8kDepozHmzMRuZP-wAAL51jEb5StxSwIFLT4Z-vjgAQADAgADeQADNAQ
+2024-03-17 at 11:39:49 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIMTWXvEB5BUHcHntnhTsl3aP6Z-XO5AAK73jEbtCiBS1GIQPhNnMslAQADAgADdwADNAQ
+2024-03-17 at 11:39:50 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIMTmXvECANFEFLbHXhd5OX_rcqYCAFAAK93jEbtCiBS3nXIid0FTaxAQADAgADdwADNAQ
+2024-03-17 at 11:39:52 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIMT2XvECFBIqvUSsWh9YjUGcnT1tMQAAK-3jEbtCiBSw3Vkq5worsiAQADAgADdwADNAQ
+2024-03-17 at 11:39:53 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIMUGXvECJoVWaWFkAlxAJ8rFudQoKUAAK_3jEbtCiBSyrsLRIwueodAQADAgADdwADNAQ
+2024-03-17 at 11:40:06 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIFNGXtc7wXSBYxnacBUnfBhPtdnu1uAAIr1TEb5StxSx-1I63CIAL5AQADAgADeAADNAQ
+2024-03-17 at 11:40:07 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIFNWXtc70D7AzprlFskSqGe0KCPzP8AAIs1TEb5StxS_ttbQ9IxpYlAQADAgADeAADNAQ
+2024-03-17 at 11:40:07 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIFNmXtc75Bvwm0oFYIpXp_5M1RZl4nAAIt1TEb5StxS1i6As87f5gwAQADAgADeAADNAQ
+2024-03-17 at 11:40:08 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIFN2Xtc79fHCFw4OADbu2pPWvkzeOxAAIu1TEb5StxS8_NSlVkvmYsAQADAgADeAADNAQ
+2024-03-17 at 11:40:48 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 11:40:48 | INFO | bot.py:31 | Starting bot
+2024-03-17 at 11:41:04 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGXGXteB3pl5fsOIYYLtwt4axpDz15AAKe1zEb5StxS562UVQjF9IoAQADAgADeAADNAQ
+2024-03-17 at 11:41:04 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJG2XtgBI_KIKXMmGTgSQrdSsCiJfNAAJC2TEb5StxS_NugJrn3iFAAQADAgADeAADNAQ
+2024-03-17 at 11:41:05 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJHGXtgBPUC7lBze8bNiyJGe5bph0jAAJE2TEb5StxS7Y58d_CoC-bAQADAgADeAADNAQ
+2024-03-17 at 11:41:05 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGXWXteB65YwvLuwLy49_MiLMjKfZnAAKf1zEb5StxS5WiigQ1iHVXAQADAgADeAADNAQ
+2024-03-17 at 11:41:06 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGXmXteB-XKnA5BNbqmc7u5-WXt0UaAAKg1zEb5StxS593mx1P0iLsAQADAgADeAADNAQ
+2024-03-17 at 11:41:06 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGX2XteCD62_E4Ltvayis7wxXVKVRNAAKh1zEb5StxSyf1kEC1JifxAQADAgADeAADNAQ
+2024-03-17 at 11:41:07 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJHWXtgBUnKU1OdFuFHYGwZD_ic_ZqAAJF2TEb5StxS3lvPfLeXh34AQADAgADeQADNAQ
+2024-03-17 at 11:41:08 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJHmXtgBaZEA0i_70BuaMFz80NwlVPAAJG2TEb5StxS_8l7qgrzCL0AQADAgADeQADNAQ
+2024-03-17 at 11:41:09 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJH2XtgBdIpyTLTggwoUi_qwm5Qk75AAJH2TEb5StxS7DSi7UENAL9AQADAgADeAADNAQ
+2024-03-17 at 11:41:09 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJIGXtgBlkZAUxpYsevpXrwHn0tLKQAAJI2TEb5StxS6rkXTg6yAOtAQADAgADeAADNAQ
+2024-03-17 at 11:41:11 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJIWXtgBpPGePLRsvxocpPoHGAmPQkAAJJ2TEb5StxSzPemGIprP6dAQADAgADeAADNAQ
+2024-03-17 at 11:41:13 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGW2XteBtIiGsZDDKCMpHgvDAOkkjqAAKd1zEb5StxS2WdKuCY047oAQADAgADeAADNAQ
+2024-03-17 at 11:41:13 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJImXtgBuE3UWpyqg-EI-P_RagRN_VAAJK2TEb5StxSwVS99C4-FEsAQADAgADeQADNAQ
+2024-03-17 at 11:41:16 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGXGXteB3pl5fsOIYYLtwt4axpDz15AAKe1zEb5StxS562UVQjF9IoAQADAgADeAADNAQ
+2024-03-17 at 11:41:16 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJI2XtgByylyTU4CCOBG-EmXOTxbibAAJL2TEb5StxSz81jK8PTg8PAQADAgADeQADNAQ
+2024-03-17 at 11:41:17 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGXWXteB65YwvLuwLy49_MiLMjKfZnAAKf1zEb5StxS5WiigQ1iHVXAQADAgADeAADNAQ
+2024-03-17 at 11:41:17 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJJGXtgB7l0-yuSi-qXMy561f6AAE0IQACTNkxG-UrcUs302U00bNoAQEAAwIAA3kAAzQE
+2024-03-17 at 11:41:18 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGXmXteB-XKnA5BNbqmc7u5-WXt0UaAAKg1zEb5StxS593mx1P0iLsAQADAgADeAADNAQ
+2024-03-17 at 11:41:18 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJJWXtgB-JW6lbZdLNNAyHI3ImdkcmAAJN2TEb5StxSwABBkpIC-_JTwEAAwIAA3kAAzQE
+2024-03-17 at 11:41:20 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGX2XteCD62_E4Ltvayis7wxXVKVRNAAKh1zEb5StxSyf1kEC1JifxAQADAgADeAADNAQ
+2024-03-17 at 11:41:20 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJJmXtgCCy9fQYNRhs3q1HnopSzSJSAAJP2TEb5StxS6wwC7oOGsY-AQADAgADeQADNAQ
+2024-03-17 at 11:41:20 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJJ2XtgCH6SOjdOmR8Vk0QIFPGf9drAAJQ2TEb5StxS8duElplKIr6AQADAgADeQADNAQ
+2024-03-17 at 11:41:20 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGYGXteCIzRxU4xDURtddg87_5Ge-DAAKi1zEb5StxS_UyeQ_1UZF4AQADAgADeAADNAQ
+2024-03-17 at 11:41:21 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGYWXteCOqxmLq6BGv1ejUDTfxvOCPAAKj1zEb5StxS9vWzlhqtcfbAQADAgADeAADNAQ
+2024-03-17 at 11:41:21 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJKGXtgCOuaVOPPfykJwMn8L-LB-l2AAJR2TEb5StxS-Gru-k8lu3lAQADAgADeQADNAQ
+2024-03-17 at 11:41:22 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGYmXteCSB5cUs2YsK5eoDVF4JOlhBAAKk1zEb5StxS1Q2S1r_EQwqAQADAgADeAADNAQ
+2024-03-17 at 11:41:23 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGY2XteCYIFAPcWJqXomasD8LTFkFQAAKl1zEb5StxS-yBOP00zTatAQADAgADeAADNAQ
+2024-03-17 at 11:41:23 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJKWXtgCRtc9hmGHWkDLcIhSUwvTSSAAJS2TEb5StxS3JenHLFtv11AQADAgADeQADNAQ
+2024-03-17 at 11:41:24 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZGXteCdAJTNfrKCVjyXlyZwXTlQbAAKm1zEb5StxSyGFaMu8VCiQAQADAgADeAADNAQ
+2024-03-17 at 11:41:24 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJKmXtgCX9jkOkTS0Tic-J7zbcdoOUAAJT2TEb5StxS0eXt_v5dEB6AQADAgADeAADNAQ
+2024-03-17 at 11:41:24 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZWXteCj9T5kQusWT9TObW_ZKoEVPAAKn1zEb5StxSx0nBeAOVyk0AQADAgADeAADNAQ
+2024-03-17 at 11:41:26 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZmXteCleLukGD__Mzhs1QyHjkGnZAAKo1zEb5StxSzmqMnzLVSWYAQADAgADeAADNAQ
+2024-03-17 at 11:41:27 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZ2XteCpmq4dFcJdbSXMXbhGS1A5OAAKp1zEb5StxSxqQKFci-aktAQADAgADeAADNAQ
+2024-03-17 at 11:41:28 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGaGXteCyEjep_oyvKKbWXPTC4mo_WAAKq1zEb5StxSxtx9VU_cVDAAQADAgADeAADNAQ
+2024-03-17 at 11:41:29 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGaWXteC0Zl_rnPOTTinBId-gJhV-XAAKr1zEb5StxS-3ue2xQFbBgAQADAgADeAADNAQ
+2024-03-17 at 11:41:34 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZ2XteCpmq4dFcJdbSXMXbhGS1A5OAAKp1zEb5StxSxqQKFci-aktAQADAgADeAADNAQ
+2024-03-17 at 11:41:34 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJI2XtgByylyTU4CCOBG-EmXOTxbibAAJL2TEb5StxSz81jK8PTg8PAQADAgADeQADNAQ
+2024-03-17 at 11:41:35 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGaGXteCyEjep_oyvKKbWXPTC4mo_WAAKq1zEb5StxSxtx9VU_cVDAAQADAgADeAADNAQ
+2024-03-17 at 11:41:36 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGaWXteC0Zl_rnPOTTinBId-gJhV-XAAKr1zEb5StxS-3ue2xQFbBgAQADAgADeAADNAQ
+2024-03-17 at 11:41:36 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJJGXtgB7l0-yuSi-qXMy561f6AAE0IQACTNkxG-UrcUs302U00bNoAQEAAwIAA3kAAzQE
+2024-03-17 at 11:41:43 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIJJWXtgB-JW6lbZdLNNAyHI3ImdkcmAAJN2TEb5StxSwABBkpIC-_JTwEAAwIAA3kAAzQE
+2024-03-17 at 11:42:31 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 11:42:31 | INFO | bot.py:31 | Starting bot
+2024-03-17 at 11:42:45 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM22XvEb0UT86Q9L1nIX8nHi4PSKS8AAJW3zEbtCiBS91_kd2tNw1VAQADAgADdwADNAQ
+2024-03-17 at 11:42:46 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM3GXvEb_TtxP7T0cPVc-lQD-fNp9BAAJX3zEbtCiBS6UHJ7DZUSm-AQADAgADdwADNAQ
+2024-03-17 at 11:43:06 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAILtWXtjRKTyQJFwfr_CUksFQb1r82TAAJi2zEb5StxS72MlLAecSt6AQADAgADdwADNAQ
+2024-03-17 at 11:43:06 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGYmXteCSB5cUs2YsK5eoDVF4JOlhBAAKk1zEb5StxS1Q2S1r_EQwqAQADAgADeAADNAQ
+2024-03-17 at 11:43:06 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM3WXvEcD6XEC9VRFA7mGYyQ9B7zq7AAJY3zEbtCiBS1LALauHz6PoAQADAgADdwADNAQ
+2024-03-17 at 11:43:06 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGY2XteCYIFAPcWJqXomasD8LTFkFQAAKl1zEb5StxS-yBOP00zTatAQADAgADeAADNAQ
+2024-03-17 at 11:43:06 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAILtmXtjRRUD9c736n1aSdSQtgWj2ixAAJj2zEb5StxSxyRehmlbX_BAQADAgADeQADNAQ
+2024-03-17 at 11:43:07 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZGXteCdAJTNfrKCVjyXlyZwXTlQbAAKm1zEb5StxSyGFaMu8VCiQAQADAgADeAADNAQ
+2024-03-17 at 11:43:07 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAILt2XtjRVowUazLj_2ifSjXz4zo_VuAAJk2zEb5StxS6WtTx9B-yv8AQADAgADdwADNAQ
+2024-03-17 at 11:43:08 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM3mXvEcL-U7y4i_8U2qJew2bUszl7AAJZ3zEbtCiBSyN0xC2ll39sAQADAgADdwADNAQ
+2024-03-17 at 11:43:09 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZWXteCj9T5kQusWT9TObW_ZKoEVPAAKn1zEb5StxSx0nBeAOVyk0AQADAgADeAADNAQ
+2024-03-17 at 11:43:09 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAILuGXtjRbQhzfwnVEfH_2JVvZDOa_VAAJl2zEb5StxS0zrSQR8OFJCAQADAgADdwADNAQ
+2024-03-17 at 11:43:09 | INFO | hendler_oge_informatics.py:65 | AgACAgIAAxkDAAIM32XvEcNow9vGp3D5ie4vOtsEcoGxAAJa3zEbtCiBSyDhGJwx7fj_AQADAgADdwADNAQ
+2024-03-17 at 11:43:11 | INFO | handler_oge_physics.py:73 | AgACAgIAAxkDAAIGZmXteCleLukGD__Mzhs1QyHjkGnZAAKo1zEb5StxSzmqMnzLVSWYAQADAgADeAADNAQ
+2024-03-17 at 11:43:11 | INFO | handler_oge_physics.py:73 | None
+2024-03-17 at 11:43:12 | INFO | handler_oge_physics.py:73 | None
+2024-03-17 at 11:43:12 | INFO | handler_oge_physics.py:73 | None
+2024-03-17 at 15:44:11 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 15:44:11 | INFO | bot.py:34 | Starting bot
+2024-03-17 at 15:44:41 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 15:44:41 | INFO | bot.py:34 | Starting bot
+2024-03-17 at 15:45:37 | INFO | handler_oge_physics.py:77 | AgACAgIAAxkDAAIFsmXtdem-I4QS3BDVltqel3qGRXbaAALp1jEb5StxS5L1FugxUICQAQADAgADeQADNAQ
+2024-03-17 at 15:47:40 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 15:47:40 | INFO | bot.py:34 | Starting bot
+2024-03-17 at 15:49:41 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 15:49:41 | INFO | bot.py:34 | Starting bot
+2024-03-17 at 15:54:47 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 15:54:47 | INFO | bot.py:34 | Starting bot
+2024-03-17 at 15:59:24 | INFO | datacoonect.py:28 | CONNECTION SUCCESSFULL
+2024-03-17 at 15:59:24 | INFO | bot.py:34 | Starting bot

@@ -12,14 +12,6 @@ class IKB:
     async def create_keyboard_menu_start(self) -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(inline_keyboard=[
             [
-                InlineKeyboardButton(text='Меню📋', callback_data='menu'),
-                InlineKeyboardButton(text='Помощь🙏', callback_data='help')
-            ]
-        ])
-    
-    async def create_kb_help(self) -> InlineKeyboardMarkup:
-        return InlineKeyboardMarkup(inline_keyboard=[
-            [
                 InlineKeyboardButton(text='Меню📋', callback_data='menu')
             ]
         ])
@@ -43,7 +35,7 @@ class IKB:
                 InlineKeyboardButton(text="»",callback_data=FactoryTask(object="informatics", task_number=task_number, task_count=task_count, direction="Next").pack())
             ],
             [
-                InlineKeyboardButton(text="✅Ответ",callback_data=FactoryTask(object="informatics", task_number=task_number, task_count=task_count, decision="yes").pack())
+                InlineKeyboardButton(text="✅Ответ",callback_data=FactoryTask(object="informatics", task_number=task_number, task_count=task_count, decision=True).pack())
             ],
             [
                 InlineKeyboardButton(text="🚨Сообщить об ошибке🚨",callback_data=FactoryError(object="error_message", task_number=task_number, task_count=task_count).pack())
@@ -61,7 +53,7 @@ class IKB:
                 InlineKeyboardButton(text="»",callback_data=FactoryTask(object='physics', task_number=task_number, task_count=task_count, direction="Next").pack())
             ],
             [
-                InlineKeyboardButton(text="✅Ответ",callback_data=FactoryTask(object='physics', task_number=task_number, task_count=task_count, decision="yes").pack())
+                InlineKeyboardButton(text="✅Ответ",callback_data=FactoryTask(object='physics', task_number=task_number, task_count=task_count, decision=True).pack())
             ],
             [
                 InlineKeyboardButton(text="🚨Сообщить об ошибке🚨",callback_data=FactoryError(object='error_message', task_number=task_number, task_count=task_count).pack())
@@ -137,7 +129,24 @@ class IKB:
             [
                 InlineKeyboardButton(text="🔙Назад", callback_data="back_menu")
             ]
-            
+        ])
+    
+    async def back_statistics(self) -> InlineKeyboardMarkup:
+        return InlineKeyboardMarkup(inline_keyboard=[
+            [
+                InlineKeyboardButton(text="🔙Назад", callback_data="statistics")
+            ]
+        ])
+    
+    async def create_statistics(self) -> InlineKeyboardMarkup:
+        return InlineKeyboardMarkup(inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Информатика", callback_data="statistics:inf"),
+                InlineKeyboardButton(text="Физика", callback_data="statistics:phy")
+            ],
+            [
+                InlineKeyboardButton(text="🔙Назад", callback_data="profile")
+            ]    
         ])
     
 
@@ -177,15 +186,15 @@ class IKB:
                 InlineKeyboardButton(text="Эмиль Исмаилов", url="https://www.youtube.com/@globalee_physics")
             ],
             [
-                InlineKeyboardButton(text="🔙Назад",callback_data=f"back_informatics")
+                InlineKeyboardButton(text="🔙Назад",callback_data=f"back_physics")
             ]
         ])
     
 
-    async def create_keybord_themes_physics_url(self) -> InlineKeyboardMarkup:
-        #https://telegra.ph/MEHANICHESKIE-YAVLENIYA-01-12
-        #https://telegra.ph/MEHANICHESKIE-YAVLENIYA-CHAST-2-01-13
-        pass
+    # async def create_keybord_themes_physics_url(self) -> InlineKeyboardMarkup:
+    #     #https://telegra.ph/MEHANICHESKIE-YAVLENIYA-01-12
+    #     #https://telegra.ph/MEHANICHESKIE-YAVLENIYA-CHAST-2-01-13
+    #     pass
 
     async def create_kb_informatics_url(self) -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(inline_keyboard=[
