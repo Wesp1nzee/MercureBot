@@ -15,9 +15,9 @@ router = Router()
 @router.callback_query(F.data == 'profile', StateMachine.statistics)
 async def callbacks_profile(callback: CallbackQuery, state: FSMContext):
     await callback.message.edit_text(
-        f"Это профиль и тут вам предлагается просмотреть статистику по вашим решеным задачкам.📊\n\n"
+        f"Это профиль здесь вы можете просмотреть статистику по задачкам.📊\n\n"
         f"Ваш id: {callback.from_user.id}\n\n"
-        f"Дата регестрации:{await db.get_data(callback.from_user.id)}",
+        f"Дата регестрации: {await db.get_data(callback.from_user.id)}",
         reply_markup= await ikb.create_profil()
      )
     

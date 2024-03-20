@@ -1,7 +1,7 @@
 from aiogram import Router, exceptions
 from aiogram.filters import ExceptionTypeFilter
 from aiogram.types import ErrorEvent
-from logs import logger
+from log import logger
 
 router = Router()
 

@@ -1,5 +1,5 @@
-/img
 /dictionar
 /config.py 
 /__pycache__
-/logs.log
+/log
+.env

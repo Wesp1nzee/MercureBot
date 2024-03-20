@@ -5,7 +5,7 @@ from lexicon.dict_task_number_phy import container_phy
 
 async def generate_tasks_string(user_id, object):
     tasks_string = ""
-    result = await db.get_task_users(id=user_id, object=object)
+    result = await db.get_task_users(id=user_id, object=object)#Достаём из Бд все задачки userы
     total_number_of_tasks = 0
     if object == "informatics":
         for i in range(len(oge_list_informatics)):
@@ -51,7 +51,7 @@ LEXICON:str = """\nЯ твой персональный бот-помощник 
 
 
 LEXICON_COMMANDS: dict[str, str] = {
-    '/menu': 'Выбрать какой класс хочешь изучать',
+    '/menu': 'Меню',
     '/start': 'Перезапустить бота',
     '/physics': 'Раздел физики',
     '/informatics': 'Рездел информатики'

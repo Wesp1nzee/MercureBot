@@ -1,6 +1,7 @@
 from aiogram import Router, F
 from aiogram.types import CallbackQuery, InputMediaPhoto
 from aiogram.fsm.context import FSMContext
+from aiogram.exceptions import TelegramBadRequest
 
 from lexicon.dict_task_number_phy import container_phy
 from fsm import StateMachine
@@ -8,6 +9,7 @@ from keyboards.inlain_users import ikb
 from callback_factory import FactoryTask
 from database.datacoonect import db
 from database.conteiner_fileid import container_fileid
+from log import logger
 
 router = Router()
 
@@ -25,11 +27,17 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext):
             "Выбери тип задачи:",    
             reply_markup = await ikb.create_kb_task_physics()
         )
-        await callback.message.delete()
+        try:
+            await callback.message.delete()
+            
+        except TelegramBadRequest:
+            await callback.answer()
+            logger.error(TelegramBadRequest)
 
     await state.set_state(StateMachine.task_selection_physics)
 
 @router.callback_query(FactoryTask.filter(F.object == "physics"), StateMachine.task_selection_physics)
+@router.callback_query(FactoryTask.filter(F.object == "physics"), StateMachine.error_message)
 async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     task_number = callback_data.task_number
     await state.update_data(task_number=task_number)
@@ -47,7 +55,13 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
                                 task_count=task_count,
                             )   
             )
-        await callback.message.delete()
+        try:
+            await callback.message.delete()
+            
+        except TelegramBadRequest:
+            await callback.answer()
+            logger.error(TelegramBadRequest)
+
         await state.set_state(StateMachine.leaf_task_physics)
 
     except KeyError:
@@ -65,8 +79,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
 
     if  task_count+1 < await container_phy.get_item(task_number):
         await db.update_user_task(callback.from_user.id, 'physics', task_number, sign="+")
-
-        image_id = await container_fileid.get_item_phy(task_number, task_count)
+        image_id = await container_fileid.get_item_phy(task_number, task_count+1)
         await callback.message.edit_media(
             media=InputMediaPhoto( 
             media=image_id,
@@ -92,8 +105,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
 
     if task_count-1 > 0:
         await db.update_user_task(callback.from_user.id, 'physics', task_number, sign="-")
-        # task_count = await db.chek_count(callback.from_user.id,'physics',task_number)
-        image_id = await container_fileid.get_item_phy(task_number, task_count)
+        image_id = await container_fileid.get_item_phy(task_number, task_count-1)
         
         await callback.message.edit_media(
             media=InputMediaPhoto( 

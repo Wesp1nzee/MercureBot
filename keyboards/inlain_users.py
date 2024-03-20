@@ -209,5 +209,14 @@ class IKB:
             ]
         ])
     
+    async def back_mistake(self, object, task_number) -> InlineKeyboardMarkup:
+        return InlineKeyboardMarkup(inline_keyboard=[
+            [
+                InlineKeyboardButton(text="🔙Назад", callback_data=FactoryTask(object=object, task_number = task_number).pack())
+            ]
+        ])
+        
+    
+    
 
 ikb = IKB()

@@ -6,7 +6,6 @@ from aiogram import BaseMiddleware
 from aiogram.types import TelegramObject
 
 from database.datacoonect import db
-from logs import logger
 
 
 class LoggerMiddleware(BaseMiddleware):

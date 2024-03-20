@@ -9,6 +9,7 @@ from fsm import StateMachine
 from callback_factory import FactoryTask
 from database.datacoonect import db
 from database.conteiner_fileid import container_fileid
+from log import logger
 
 
 router = Router()
@@ -26,12 +27,18 @@ async def callback_informatics_task(callback: CallbackQuery, state: FSMContext):
             "Выбери тип задачи:",    
             reply_markup = await ikb.create_kb_tasks_informatics()
         )
-        await callback.message.delete()
+        try:
+            await callback.message.delete()
+            
+        except TelegramBadRequest:
+            await callback.answer()
+            logger.error(TelegramBadRequest)
 
     await state.set_state(StateMachine.task_selection_informatics)
 
 
 @router.callback_query(FactoryTask.filter(F.object == "informatics"), StateMachine.task_selection_informatics)
+@router.callback_query(FactoryTask.filter(F.object == "informatics"), StateMachine.error_message)
 async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     task_number = callback_data.task_number
     await state.update_data(task_number = task_number)
@@ -47,8 +54,13 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
             task_count = task_count,
             )
     )
+    try:
+        await callback.message.delete()
+            
+    except TelegramBadRequest:
+        await callback.answer()
+        logger.error(TelegramBadRequest)
 
-    await callback.message.delete()
     await state.set_state(StateMachine.leaf_task_informatics)
 
 
@@ -60,7 +72,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
 
     if task_count+1 < await container_inf.get_item(task_number):
         await db.update_user_task(callback.from_user.id, 'informatics', task_number, sign="+")
-        image_id = await container_fileid.get_item_inf(task_number, task_count)
+        image_id = await container_fileid.get_item_inf(task_number, task_count+1)
 
         await callback.message.edit_media(
         media=InputMediaPhoto( 
@@ -71,7 +83,6 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
             task_count=task_count+1,
             )
         )
-
         
     else:
         await callback.answer(
@@ -88,7 +99,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
 
     if task_count-1 >= 1:
         await db.update_user_task(callback.from_user.id, 'informatics', task_number, sign="-" )
-        image_id = await container_fileid.get_item_inf(task_number, task_count)
+        image_id = await container_fileid.get_item_inf(task_number, task_count-1)
         
         await callback.message.edit_media(
         media=InputMediaPhoto( 
@@ -99,7 +110,6 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
             task_count=task_count-1,
             )
         )
-
 
     else:
         await callback.answer(

@@ -3,6 +3,7 @@ from typing import Union
 from keyboards.inlain_users import ikb
 from fsm import StateMachine
 from lexicon.lexicon import LEXICON_PHYSICS
+from log import logger
 
 from aiogram.fsm.context import FSMContext
 from aiogram import Router, F
@@ -10,6 +11,7 @@ from aiogram.types import CallbackQuery, Message
 from aiogram.enums import ParseMode 
 from aiogram.utils.markdown import hide_link 
 from aiogram.filters import Command
+from aiogram.exceptions import TelegramBadRequest
 
 
 router = Router()
@@ -32,7 +34,11 @@ async def callbacks_profile(query_message: Union[CallbackQuery, Message], state:
             text=LEXICON_PHYSICS["introduction"],      
             reply_markup = await ikb.create_keyboard_physics()
         )
-        await query_message.delete()
+        try:
+            await query_message.delete()
+            
+        except TelegramBadRequest:
+            logger.error(TelegramBadRequest)
     
     await state.set_state(StateMachine.physics)
 

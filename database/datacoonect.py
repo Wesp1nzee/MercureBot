@@ -3,22 +3,22 @@ import aiomysql
 
 import sys 
 
-from config import HOST, USER, PASSWORD, DATABASE, PORT
-from logs import logger
+# from config import HOST, USER, PASSWORD, DATABASE, PORT
+from log import logger
 
 
 class DataBase:
     
-    async def create_connection(self,loop): 
+    async def create_connection(self, host, port, user, password, database, loop): 
         """Функция созданий соеденении с базой данных"""
         try:
             # Создаем соеденение
             self.conn = await aiomysql.connect(
-                                        host=HOST,
-                                        port=PORT,
-                                        user=USER,
-                                        password=PASSWORD,
-                                        db=DATABASE,
+                                        host=host,
+                                        port=port,
+                                        user=user,
+                                        password=password,
+                                        db=database,
                                         autocommit=True,
                                         loop=loop)
         except Error as e:

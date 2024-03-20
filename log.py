@@ -7,7 +7,7 @@ logger.remove()
 logger = logger.opt(colors=True)
 
 logger.add(
-    "logs.log",
+    "log/logs.log",
     rotation="100 MB",
     compression="zip",
     retention="30 days",
