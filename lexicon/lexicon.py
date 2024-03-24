@@ -3,10 +3,17 @@ from lexicon.dict_task_number_inf import container_inf
 from lexicon.dict_task_number_phy import container_phy
 
 
-async def generate_tasks_string(user_id, object):
-    tasks_string = ""
-    result = await db.get_task_users(id=user_id, object=object)#Достаём из Бд все задачки userы
+async def generate_tasks_string(
+        user_id: int | str, 
+        object: str
+        )-> str:
+    """
+    Генерирует статистику для пользователя. 
+    """
+    tasks_string: str = ""
+    result: list = list(map(lambda x: x-1, await db.get_task_users(user_id=user_id, object=object)))#Достаём из Бд все задачки user
     total_number_of_tasks = 0
+
     if object == "informatics":
         for i in range(len(oge_list_informatics)):
             count_task = await container_inf.get_item(i+1)
@@ -19,7 +26,7 @@ async def generate_tasks_string(user_id, object):
         return tasks_string
     
     if object == "physics":
-        glossary = {
+        glossary: dict[int, str] = {
              4 : "5-6 Номера",
              16 : "19-20 Номера",
              17 : "21-22 Номера",
@@ -37,12 +44,12 @@ async def generate_tasks_string(user_id, object):
                 tasks_string += f"{glossary[i]}. Кол-во:❌\n"
 
         tasks_string += f"\nВсего решено - {sum(result)}"
-        tasks_string += f"\nПроцент от общего числа - {round(((sum(result) / total_number_of_tasks) * 100))}%"
+        tasks_string += f"\nПроцент от общего числа - {((sum(result) / total_number_of_tasks) * 100):.1f}%"
 
         return tasks_string
     
 
-LEXICON:str = """\nЯ твой персональный бот-помощник по подготовке к экзаменам!🤖
+LEXICON: str = """\nЯ твой персональный бот-помощник по подготовке к экзаменам!🤖
 Почему этот бот идеальный помощник для подготовки к экзаменам?:
 - В нём собрана необходимая информация для подготовки к экзаменам по физике и информатике.
 - Официальная база ФИПИ. ❗️В нашей базе содержится 2 200+ официальных задач ФИПИ с ответами, которые могут попасть в 2024 ГОДУ НА ОГЭ❗️
@@ -82,7 +89,8 @@ LEXICON_PHYSICS: dict[str, str] = {
 }
 
 
-oge_list_physics: list = ["Задание 1 Физические величины",
+oge_list_physics: list = [
+"Задание 1 Физические величины",
 "Задание 2 Соответствие",
 "Задание 3 Тепловые и механические явления",
 "Задание 4 Распознавание явлений",

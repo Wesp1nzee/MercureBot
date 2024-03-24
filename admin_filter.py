@@ -1,15 +1,15 @@
 from aiogram.filters import BaseFilter
 from aiogram.types import Message
+from config import Config, load_config
 
-admin_ids: list[int] = [1131355515]
-
+config: Config = load_config()
 
 class IsAdmin(BaseFilter):
-    def __init__(self, admin_ids: list[int]) -> None:
-        self.admin_ids = admin_ids
+
+    admin_ids: int = config.tg_bot.admin_ids
 
     async def __call__(self, message: Message) -> bool:
-        return message.from_user.id in self.admin_ids
+        return message.from_user.id == self.admin_ids
     
 
-AdminFilter = IsAdmin(admin_ids)
+AdminFilter = IsAdmin()

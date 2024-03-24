@@ -10,9 +10,8 @@ from database.datacoonect import db
 router = Router()
 
 
-# Этот хэндлер будет срабатывать на команду "/start"
 @router.message(CommandStart(), AdminFilter)
-async def start_command(message: Message):
+async def start_command_admin(message: Message):
 
     cpu_usage = psutil.cpu_percent(interval=1)
     ram = psutil.virtual_memory()
@@ -27,7 +26,7 @@ async def start_command(message: Message):
     )
 
 @router.callback_query(F.data == "update", AdminFilter)
-async def start_command(callback: CallbackQuery):
+async def update_admin(callback: CallbackQuery):
 
     cpu_usage = psutil.cpu_percent(interval=1)
     ram = psutil.virtual_memory()

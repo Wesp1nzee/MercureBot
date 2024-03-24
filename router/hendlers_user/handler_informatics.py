@@ -13,7 +13,7 @@ from aiogram.exceptions import TelegramBadRequest
 
 router = Router()
 
-#Пользователь выбрал информатику
+
 @router.message(Command(commands="informatics"))
 @router.callback_query(F.data == "back_informatics", StateMachine.theory_informatics)
 @router.callback_query(F.data == "back_informatics", StateMachine.task_selection_informatics)
@@ -33,22 +33,21 @@ async def informatics(query_message: Union[CallbackQuery, Message], state: FSMCo
             text=LEXICON_INFORMATIC['introduction'],    
             reply_markup = await ikb.create_kb_informatics()
         )
-        await query_message.delete()
+
+        try:
+            await query_message.delete()
+            
+        except TelegramBadRequest:
+            pass
 
     await state.set_state(StateMachine.informatics)
     
 @router.callback_query(F.data == 'informatics_theory', StateMachine.informatics)
 async def informatics_theory(callback: CallbackQuery, state: FSMContext):
-    try:
-        await callback.message.edit_text(
-            text=LEXICON_INFORMATIC['theory'],
-            reply_markup = await ikb.create_kb_informatics_url()
-        )
-    except TelegramBadRequest:
-        await callback.message.answer(
-            "Тут ты можешь выбрать конспект или задачи из ОГЭ",    
-            reply_markup = await ikb.create_kb_informatics()
-        )
-        await callback.message.delete()
+    
+    await callback.message.edit_text(
+        text=LEXICON_INFORMATIC['theory'],
+        reply_markup = await ikb.create_kb_informatics_url()
+    )
     
     await state.set_state(StateMachine.theory_informatics)

@@ -3,7 +3,7 @@ from typing import Any, Awaitable, Callable, Dict
 from aiomysql import DataError
 
 from aiogram import BaseMiddleware
-from aiogram.types import TelegramObject
+from aiogram.types import TelegramObject, Chat, User
 
 from database.datacoonect import db
 
@@ -21,7 +21,6 @@ class LoggerMiddleware(BaseMiddleware):
         chat = data["event_chat"] 
         message = event.message 
         query = event.callback_query 
-
         # Проверяем, есть ли сообщение
         if message:
             # Проверяем, есть ли текст в сообщении

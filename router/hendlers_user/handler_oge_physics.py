@@ -32,7 +32,6 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext):
             
         except TelegramBadRequest:
             await callback.answer()
-            logger.error(TelegramBadRequest)
 
     await state.set_state(StateMachine.task_selection_physics)
 
@@ -60,7 +59,6 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
             
         except TelegramBadRequest:
             await callback.answer()
-            logger.error(TelegramBadRequest)
 
         await state.set_state(StateMachine.leaf_task_physics)
 
@@ -128,7 +126,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
     user_data = await state.get_data()
     task_number = user_data["task_number"]
     task_count = callback_data.task_count
-    answer = await db.get_task_decision(id=task_count,task_number=task_number, object="physics")
+    answer = await db.get_task_decision(user_id=task_count,task_number=task_number, object="physics")
     if answer:
         await callback.answer(
             text=f'Ответ: {answer}',

@@ -9,7 +9,7 @@ class FactoryTask(CallbackData, prefix='task'):
     direction:Optional[str] = None
     decision:Optional[bool] = None
 
-class FactoryError(CallbackData, prefix='task'):
+class FactoryMistake(CallbackData, prefix='task'):
     object: str 
-    task_number:int
-    task_count:int
+    task_number: int
+    task_count: int

@@ -1,13 +1,12 @@
 from typing import Union
 
-from aiogram import Router, F
-from aiogram.types import Message, CallbackQuery
+from aiogram import Router, F, Bot
+from aiogram.types import Message, CallbackQuery, LinkPreviewOptions
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
-from aiogram.exceptions import TelegramBadRequest
 
 from keyboards.inlain_users import ikb
-from lexicon.lexicon import LEXICON, MENU
+from lexicon.lexicon import MENU
 from fsm import StateMachine
 
 router = Router()
@@ -16,16 +15,20 @@ router = Router()
 @router.message(Command(commands = "menu"))
 @router.callback_query(F.data == "back_menu")
 @router.callback_query(F.data == "menu", StateMachine.start)
-async def message_menu(query_message: Union[CallbackQuery, Message], state: FSMContext):
+async def message_menu(query_message: Union[CallbackQuery, Message], state: FSMContext, bot: Bot):
+
     if isinstance(query_message, CallbackQuery):
         await query_message.message.edit_text(
-            text=MENU,        
+            text=MENU,
+            disable_web_page_preview=True,
+            link_preview_options=LinkPreviewOptions(is_disabled=True),     
             reply_markup= await ikb.create_kd_menu()
             )
         
     if isinstance(query_message, Message):
         await query_message.answer(
             text=MENU,    
+            link_preview_options=LinkPreviewOptions(is_disabled=True),             
             reply_markup= await ikb.create_kd_menu()
             )
     
@@ -33,6 +36,7 @@ async def message_menu(query_message: Union[CallbackQuery, Message], state: FSMC
 
 @router.callback_query(F.data == 'plug')
 async def callbacks_profile(callback: CallbackQuery):
+    """Затычка"""
     await callback.answer("Не нажимай на меня:)")
 
 

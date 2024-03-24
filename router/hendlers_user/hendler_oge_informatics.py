@@ -32,7 +32,6 @@ async def callback_informatics_task(callback: CallbackQuery, state: FSMContext):
             
         except TelegramBadRequest:
             await callback.answer()
-            logger.error(TelegramBadRequest)
 
     await state.set_state(StateMachine.task_selection_informatics)
 
@@ -59,7 +58,6 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
             
     except TelegramBadRequest:
         await callback.answer()
-        logger.error(TelegramBadRequest)
 
     await state.set_state(StateMachine.leaf_task_informatics)
 
@@ -125,7 +123,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
     task_count = callback_data.task_count
 
     await callback.answer(
-        text= f'Ответ: {await db.get_task_decision(id=task_count,task_number=task_number, object="informatics")}',
+        text= f'Ответ: {await db.get_task_decision(user_id=task_count,task_number=task_number, object="informatics")}',
         show_alert=True
         )
     

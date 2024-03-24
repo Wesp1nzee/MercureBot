@@ -15,7 +15,8 @@ from aiogram.exceptions import TelegramBadRequest
 
 
 router = Router()
-#Пользователь выбрал физику
+
+
 @router.message(Command(commands="physics"))
 @router.callback_query(F.data == "back_physics", StateMachine.theory_physics)
 @router.callback_query(F.data == "back_physics", StateMachine.task_selection_physics)
@@ -38,7 +39,7 @@ async def callbacks_profile(query_message: Union[CallbackQuery, Message], state:
             await query_message.delete()
             
         except TelegramBadRequest:
-            logger.error(TelegramBadRequest)
+            pass
     
     await state.set_state(StateMachine.physics)
 

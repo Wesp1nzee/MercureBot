@@ -1,21 +1,21 @@
-from typing import Union
-
 from aiogram import Router, F, Bot
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
+from aiogram.exceptions import TelegramBadRequest
+
 from config import Config, load_config
 from database.conteiner_fileid import container_fileid, container_fileid
 
 from keyboards.inlain_users import ikb
 from fsm import StateMachine
-from callback_factory import  FactoryError
+from callback_factory import FactoryMistake
 
 router = Router()
 
 
-@router.callback_query(FactoryError.filter(F.object == "error_message"), StateMachine.leaf_task_physics)
-@router.callback_query(FactoryError.filter(F.object == "error_message"), StateMachine.leaf_task_informatics)
-async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryError):
+@router.callback_query(FactoryMistake.filter(F.object == "error_message"), StateMachine.leaf_task_physics)
+@router.callback_query(FactoryMistake.filter(F.object == "error_message"), StateMachine.leaf_task_informatics)
+async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryMistake):
     user_data = await state.get_data()
     task_number = user_data["task_number"]
     object = user_data["object"]
@@ -28,7 +28,12 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
         reply_markup= await ikb.back_mistake(object, task_number)
             )
     await state.set_state(StateMachine.error_message)
-    await callback.message.delete()
+    
+    try:
+        await callback.message.delete()
+            
+    except TelegramBadRequest:
+        await callback.answer()
 
 @router.message(F.text, StateMachine.error_message)
 async def error_message(message: Message, state: FSMContext, bot:Bot):

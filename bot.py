@@ -1,8 +1,9 @@
-import logging
 import asyncio
 
 from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.redis import RedisStorage, Redis
+from aiogram.client.bot import DefaultBotProperties
+from aiogram.enums import ParseMode
 
 from lexicon.dict_task_number_inf import container_inf
 from lexicon.dict_task_number_phy import container_phy
@@ -33,7 +34,7 @@ async def main():
 
     logger.info('Starting bot')
     
-    bot = Bot(token=config.tg_bot.token, parse_mode='HTML')
+    bot = Bot(token=config.tg_bot.token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     redis = Redis(host='localhost')
     dp = Dispatcher(storage = RedisStorage(redis=redis))
 
