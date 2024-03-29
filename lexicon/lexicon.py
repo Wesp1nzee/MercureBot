@@ -1,6 +1,5 @@
 from database.datacoonect import db
-from lexicon.dict_task_number_inf import container_inf
-from lexicon.dict_task_number_phy import container_phy
+from lexicon.dict_task_number import container_inf, container_phy
 
 
 async def generate_tasks_string(
@@ -30,18 +29,27 @@ async def generate_tasks_string(
              4 : "5-6 Номера",
              16 : "19-20 Номера",
              17 : "21-22 Номера",
-             19 : "24-25 Номера"
+             21 : "24-25 Номера"
         }
         for i in range(len(oge_list_physics)):
             if not i in [16, 17]:
                     count_task = await container_phy.get_item(i+1)
-                    if not i in [4, 19]:
+                    if not i in [4, 20]:
                         tasks_string += f"{i+1} Номер. Кол-во: {result[i]} из {count_task}\n"
                         total_number_of_tasks += count_task
                     else:
                         tasks_string += f"{glossary[i]}. Кол-во: {result[i]} из {count_task}\n"
             else:
-                tasks_string += f"{glossary[i]}. Кол-во:❌\n"
+                if i == 17:
+                    tasks_string += f"{glossary[i]}:\n"
+                    count_task = await container_phy.get_item("18_1")
+                    tasks_string += f"Механические явления\nКол-во: {result[17]} из {count_task}\n"
+                    count_task = await container_phy.get_item("18_2")
+                    tasks_string += f"Тепловые явления\nКол-во: {result[18]} из {count_task}\n"
+                    count_task = await container_phy.get_item("18_3")
+                    tasks_string += f"Электрические явления\nКол-во: {result[19]} из {count_task}\n"
+                else:    
+                    tasks_string += f"{glossary[i]}. Кол-во:❌\n"
 
         tasks_string += f"\nВсего решено - {sum(result)}"
         tasks_string += f"\nПроцент от общего числа - {((sum(result) / total_number_of_tasks) * 100):.1f}%"
@@ -52,7 +60,7 @@ async def generate_tasks_string(
 LEXICON: str = """\nЯ твой персональный бот-помощник по подготовке к экзаменам!🤖
 Почему этот бот идеальный помощник для подготовки к экзаменам?:
 - В нём собрана необходимая информация для подготовки к экзаменам по физике и информатике.
-- Официальная база ФИПИ. ❗️В нашей базе содержится 2 200+ официальных задач ФИПИ с ответами, которые могут попасть в 2024 ГОДУ НА ОГЭ❗️
+- Официальная база ФИПИ. ❗️В нашей базе содержится 2 300+ официальных задач ФИПИ с ответами, которые могут попасть в 2024 ГОДУ НА ОГЭ❗️
 Поэтому я рекомендую вам решать задачи именно у нас.
     """
 

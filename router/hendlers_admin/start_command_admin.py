@@ -32,7 +32,6 @@ async def update_admin(callback: CallbackQuery):
     ram = psutil.virtual_memory()
     ram_total_gib = ram.total / (1024**3)
     ram_used_gib = ram.used / (1024**3)  
-
     performance_info = f"<code>CPU Usage: {cpu_usage}%\nRAM Total: {ram_total_gib:.3f} GiB\nRAM Used: {ram_used_gib:.3f} GiB</code>"
 
     await callback.message.edit_text(

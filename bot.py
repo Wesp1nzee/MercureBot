@@ -5,8 +5,7 @@ from aiogram.fsm.storage.redis import RedisStorage, Redis
 from aiogram.client.bot import DefaultBotProperties
 from aiogram.enums import ParseMode
 
-from lexicon.dict_task_number_inf import container_inf
-from lexicon.dict_task_number_phy import container_phy
+from lexicon.dict_task_number import container_inf, container_phy
 from keyboards.main_menu import set_main_menu
 from database.datacoonect import db
 from config import Config, load_config
@@ -17,19 +16,15 @@ from logger_middlewares import LoggerMiddleware
 from log import logger
 from database.conteiner_fileid import container_fileid
 
-loop = asyncio.get_event_loop()
 
 async def main():
     config: Config = load_config()
     #Создаем соеденение с БД
-    await db.create_connection(host=config.bd_bot.host,
-                               port=config.bd_bot.port,
-                               user=config.bd_bot.user,
-                               password=config.bd_bot.password,
-                               database=config.bd_bot.database,
-                               loop=loop)
+    await db.connect()
+    #Словари для подсчёта количества 
     await container_inf.create_container()
     await container_phy.create_container()
+    #Словарь для file_id
     await container_fileid.create_container_fileId()
 
     logger.info('Starting bot')

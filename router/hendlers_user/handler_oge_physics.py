@@ -3,7 +3,7 @@ from aiogram.types import CallbackQuery, InputMediaPhoto
 from aiogram.fsm.context import FSMContext
 from aiogram.exceptions import TelegramBadRequest
 
-from lexicon.dict_task_number_phy import container_phy
+from lexicon.dict_task_number import container_phy
 from fsm import StateMachine
 from keyboards.inlain_users import ikb
 from callback_factory import FactoryTask
@@ -35,8 +35,19 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext):
 
     await state.set_state(StateMachine.task_selection_physics)
 
+
+@router.callback_query(FactoryTask.filter(F.object == "physics" and F.task_number == '18'), StateMachine.task_selection_physics)
+async def message_with_text(callback: CallbackQuery, state: FSMContext):
+    await callback.message.edit_text(
+            "Задания 21-22 разделаются на темы\nВыбери тему:",    
+            reply_markup = await ikb.create_phenomenon_selection_kd()
+        )
+    await state.set_state(StateMachine.task_18_selection_physics)
+
+
 @router.callback_query(FactoryTask.filter(F.object == "physics"), StateMachine.task_selection_physics)
 @router.callback_query(FactoryTask.filter(F.object == "physics"), StateMachine.error_message)
+@router.callback_query(FactoryTask.filter(F.object == "physics"), StateMachine.task_18_selection_physics)
 async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     task_number = callback_data.task_number
     await state.update_data(task_number=task_number)
@@ -75,7 +86,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
     task_number = user_data["task_number"]
     task_count = callback_data.task_count
 
-    if  task_count+1 < await container_phy.get_item(task_number):
+    if  task_count+1 <= await container_phy.get_item(task_number):
         await db.update_user_task(callback.from_user.id, 'physics', task_number, sign="+")
         image_id = await container_fileid.get_item_phy(task_number, task_count+1)
         await callback.message.edit_media(

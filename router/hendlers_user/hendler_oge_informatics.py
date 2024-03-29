@@ -3,7 +3,7 @@ from aiogram.types import CallbackQuery, InputMediaPhoto
 from aiogram.fsm.context import FSMContext
 from aiogram.exceptions import TelegramBadRequest
 
-from lexicon.dict_task_number_inf import container_inf
+from lexicon.dict_task_number import container_inf
 from keyboards.inlain_users import ikb
 from fsm import StateMachine
 from callback_factory import FactoryTask
@@ -68,7 +68,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
     task_number = user_data["task_number"]
     task_count = callback_data.task_count
 
-    if task_count+1 < await container_inf.get_item(task_number):
+    if task_count+1 <= await container_inf.get_item(task_number):
         await db.update_user_task(callback.from_user.id, 'informatics', task_number, sign="+")
         image_id = await container_fileid.get_item_inf(task_number, task_count+1)
 
@@ -95,7 +95,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
     task_number = user_data["task_number"]
     task_count = callback_data.task_count
 
-    if task_count-1 >= 1:
+    if task_count-1 > 0:
         await db.update_user_task(callback.from_user.id, 'informatics', task_number, sign="-" )
         image_id = await container_fileid.get_item_inf(task_number, task_count-1)
         

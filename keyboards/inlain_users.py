@@ -1,8 +1,8 @@
 from aiogram.utils.keyboard import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from lexicon.dict_task_number_inf import container_inf
-from lexicon.dict_task_number_phy import container_phy
+from lexicon.dict_task_number import container_inf
+from lexicon.dict_task_number import container_phy
 from lexicon.lexicon import oge_list_physics, oge_list_informatics
 from callback_factory import FactoryTask, FactoryMistake
 
@@ -267,5 +267,20 @@ class IKB:
             ]
         ])
         
+    async def create_phenomenon_selection_kd(self) -> InlineKeyboardMarkup:
+        return InlineKeyboardMarkup(inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Механические явления", callback_data=FactoryTask(object='physics', task_number = '18_1').pack())
+            ], 
+            [
+                InlineKeyboardButton(text="Тепловые явления", callback_data=FactoryTask(object='physics', task_number = '18_2').pack())
+            ],
+            [
+                InlineKeyboardButton(text="Электрические явления", callback_data=FactoryTask(object='physics', task_number = '18_3').pack())
+            ],
+            [
+                InlineKeyboardButton(text="🔙Назад",callback_data=f"back_physics")
+            ]
+        ])
 
 ikb = IKB()

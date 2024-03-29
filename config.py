@@ -13,7 +13,7 @@ class DateBase:
     port: int  
     user: str
     password: str
-    database: str
+    database_name: str
 
 @dataclass
 class Config:
@@ -35,6 +35,6 @@ def load_config(path: str | None = None) -> Config:
             port=env.int('PORT'),
             user=env('USER'),
             password=env('PASSWORD'),
-            database=env('DATABASE')
+            database_name=env('DATABASE_NAME')
         )
     )

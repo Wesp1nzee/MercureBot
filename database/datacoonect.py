@@ -2,6 +2,7 @@ from aiomysql import Error
 import aiomysql
 from aiomysql import Connection
 
+import asyncio
 from asyncio.events import AbstractEventLoop
 
 import sys 
@@ -9,27 +10,44 @@ import sys
 from log import logger
 
 from datetime import datetime
+from config import Config, load_config
 
 
-class DataBase:
-    """Взаимодействие с БД"""
-    async def create_connection(self, 
-                                host: str,
-                                port: int, 
-                                user: str, 
-                                password: str, 
-                                database: str, 
-                                loop: AbstractEventLoop)-> None: 
+loop: AbstractEventLoop = asyncio.get_event_loop()
+config: Config = load_config()
+
+class Singleton(type):
+    _instances = {}
+
+    def __call__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
+        return cls._instances[cls]
+
+
+class DataBase(metaclass=Singleton):
+
+    def __init__(self, host, port, user, password, database_name, loop) -> None:
+        self.host = host
+        self.port = port
+        self.user = user
+        self.password = password
+        self.database_name = database_name
+        self.loop = loop
+        self.conn = None
+
+    async def connect(self): 
         """Функция созданий соеденении с базой данных"""
         try:
-            self.conn = await aiomysql.connect(
-                                        host=host,
-                                        port=port,
-                                        user=user,
-                                        password=password,
-                                        db=database,
-                                        autocommit=True,
-                                        loop=loop)
+            if not self.conn:
+                self.conn = await aiomysql.connect(
+                                            host=self.host,
+                                            port=self.port,
+                                            user=self.user,
+                                            password=self.password,
+                                            db=self.database_name,
+                                            autocommit=True,
+                                            loop=self.loop)
         except Error as e:
             logger.error(f'CONNECTION ERROR: {e}')
             sys.exit(1)
@@ -164,26 +182,21 @@ class DataBase:
                     res.append(row[0])
             return res
             
-    async def add_log(self, 
-                      chat_id:int , 
+    async def add_log(self,  
                       user_id:int , 
-                      user_full_name:str, 
-                      telegram_object:str, 
                       content:str)-> None:
         """
         Функция для логирования
         Функция выдаёт id задачи по информатике
-        :param chat_id: Уникальный идентификатор для этого чата.
         :param user_id: Уникальный идентификатор для этого пользователя
-        :param user_full_name: 
         :param telegram_object: Объект телеграмма
         :param content: content
         :return: list
         """
         pool: Connection = self.conn
         async with pool.cursor() as cur:
-            await cur.execute(f"INSERT INTO users.logs (chat_id, user_id, user_full_name, telegram_object, content)\
-                              VALUES(%s, %s, %s, %s, %s)", (str(chat_id), str(user_id), user_full_name, telegram_object, content))
+            await cur.execute(f"INSERT INTO users.logs (user_id, content)\
+                              VALUES(%s, %s)", (str(user_id),content))
 
     async def get_data(self, 
                        user_id: int|str) -> datetime:
@@ -220,4 +233,10 @@ class DataBase:
                 return row[0]
 
             
-db = DataBase()
+db = DataBase(
+    host=config.bd_bot.host,
+    port=config.bd_bot.port,
+    user=config.bd_bot.user,
+    password=config.bd_bot.password,
+    database_name=config.bd_bot.database_name,
+    loop=loop)
