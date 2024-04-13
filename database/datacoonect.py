@@ -160,14 +160,8 @@ class DataBase():
         res = []
         async with pool.cursor() as cur:
             await cur.execute(f"SELECT task_{task_number} FROM users.physics_task;")
-            for (
-                row
-            ) in (
-                await cur.fetchall()
-            ):  # Сопрограмма возвращает все строки результирующего набора запроса -> (list[tuple(),])
-                if row[
-                    0
-                ]:  # if list[none] если столбец пустой, то не добовляем в массив
+            for row in ( await cur.fetchall()):  # Сопрограмма возвращает все строки результирующего набора запроса -> (list[tuple(),])
+                if row[0]:  # if list[none] если столбец пустой, то не добовляем в массив
                     res.append(row[0])
             return res
 
@@ -181,14 +175,8 @@ class DataBase():
         res = []
         async with pool.cursor() as cur:
             await cur.execute(f"SELECT task_{task_number} FROM users.informatics_task;")
-            for (
-                row
-            ) in (
-                await cur.fetchall()
-            ):  # Сопрограмма возвращает все строки результирующего набора запроса -> (list[tuple(),])
-                if row[
-                    0
-                ]:  # if list[none] если столбец пустой, то не добовляем в массив
+            for row in (await cur.fetchall()):  # Сопрограмма возвращает все строки результирующего набора запроса -> (list[tuple(),])
+                if row[0]:  # if list[none] если столбец пустой, то не добовляем в массив
                     res.append(row[0])
             return res
 
