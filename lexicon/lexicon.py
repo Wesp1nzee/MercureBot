@@ -9,53 +9,40 @@ async def generate_tasks_string(
     """
     Генерирует статистику для пользователя. 
     """
-    tasks_string: str = ""
-    result: list = list(map(lambda x: x-1, await db.get_task_users(user_id=user_id, object=object)))#Достаём из Бд все задачки user
-    total_number_of_tasks = 0
+    tasks_string = ""
+    result = list(map(lambda x: x-1, await db.get_task_users(user_id=user_id, object=object)))#Достаём из Бд все задачки user
+    result_dict = {index: value for index, value in enumerate(result, start=1)}
 
     if object == "informatics":
-        for i in range(len(oge_list_informatics)):
-            count_task = await container_inf.get_item(i+1)
-            total_number_of_tasks += count_task
-            tasks_string += f"{i+1} Номер. Кол-во: {result[i]} из {count_task}\n"
+        for i in range(1, 11):
+            tasks_string += f"{i} Номер. Кол-во: {result_dict[i]}\n"
 
         tasks_string += f"\nВсего решено - {sum(result)}"
-        tasks_string += f"\nПроцент от общего числа - {round(((sum(result) / total_number_of_tasks) * 100))}%"
+        tasks_string += f"\nПроцент от общего числа - {round(((sum(result) / await container_inf.get_value()) * 100))}%"
 
         return tasks_string
     
     if object == "physics":
-        glossary: dict[int, str] = {
-             4 : "5-6 Номера",
-             16 : "19-20 Номера",
-             17 : "21-22 Номера",
-             21 : "24-25 Номера"
-        }
-        for i in range(len(oge_list_physics)):
-            if not i in [16, 17]:
-                    count_task = await container_phy.get_item(i+1)
-                    if not i in [4, 20]:
-                        tasks_string += f"{i+1} Номер. Кол-во: {result[i]} из {count_task}\n"
-                        total_number_of_tasks += count_task
-                    else:
-                        tasks_string += f"{glossary[i]}. Кол-во: {result[i]} из {count_task}\n"
-            else:
-                if i == 17:
-                    tasks_string += f"{glossary[i]}:\n"
-                    count_task = await container_phy.get_item("18_1")
-                    tasks_string += f"Механические явления\nКол-во: {result[17]} из {count_task}\n"
-                    count_task = await container_phy.get_item("18_2")
-                    tasks_string += f"Тепловые явления\nКол-во: {result[18]} из {count_task}\n"
-                    count_task = await container_phy.get_item("18_3")
-                    tasks_string += f"Электрические явления\nКол-во: {result[19]} из {count_task}\n"
-                else:    
-                    tasks_string += f"{glossary[i]}. Кол-во:❌\n"
+        for i in range(1, 19):
+            if not i in [5,17,18,19]:
+                tasks_string += f"{i} Номер. Кол-во: {result_dict[i]}\n"
 
-        tasks_string += f"\nВсего решено - {sum(result)}"
-        tasks_string += f"\nПроцент от общего числа - {((sum(result) / total_number_of_tasks) * 100):.1f}%"
+            elif i == 5:
+                tasks_string += f"5-6 Номер. Кол-во: {result_dict[i]}\n"
+
+            elif i == 18:
+                tasks_string += "19-20 Номера. ❌\n"
+                tasks_string += "21-22 Номера:\n"
+                tasks_string += f"-Механические явления: {result_dict[18]}\n"
+                tasks_string += f"-Тепловые явления: {result_dict[19]}\n"
+                tasks_string += f"-Электрические явления: {result_dict[20]}\n"
+                tasks_string += f"-23 Номер. Кол-во: {result_dict[21]}\n"
+                tasks_string += f"-24-25 Номер. Кол-во: {result_dict[22]}\n"
 
         return tasks_string
-    
+
+        
+
 
 LEXICON: str = """\nЯ твой персональный бот-помощник по подготовке к экзаменам!🤖
 Почему этот бот идеальный помощник для подготовки к экзаменам?:
