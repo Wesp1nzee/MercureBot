@@ -1,4 +1,4 @@
-from database.datacoonect import db
+from database.dataclass import db
 from lexicon.dict_task_number import container_inf, container_phy
 
 
@@ -38,6 +38,9 @@ async def generate_tasks_string(
                 tasks_string += f"-Электрические явления: {result_dict[20]}\n"
                 tasks_string += f"-23 Номер. Кол-во: {result_dict[21]}\n"
                 tasks_string += f"-24-25 Номер. Кол-во: {result_dict[22]}\n"
+        
+        tasks_string += f"\nВсего решено - {sum(result)}"
+        tasks_string += f"\nПроцент от общего числа - {round(((sum(result) / await container_inf.get_value()) * 100))}%"
 
         return tasks_string
 

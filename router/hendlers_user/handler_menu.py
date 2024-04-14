@@ -1,6 +1,6 @@
 from typing import Union
 
-from aiogram import Router, F, Bot
+from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery, LinkPreviewOptions
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
@@ -15,9 +15,7 @@ router = Router()
 @router.message(Command(commands="menu"))
 @router.callback_query(F.data == "back_menu")
 @router.callback_query(F.data == "menu", StateMachine.start)
-async def message_menu(
-    query_message: Union[CallbackQuery, Message], state: FSMContext, bot: Bot
-):
+async def message_menu(query_message: Union[CallbackQuery, Message], state: FSMContext):
 
     if isinstance(query_message, CallbackQuery):
         await query_message.message.edit_text(

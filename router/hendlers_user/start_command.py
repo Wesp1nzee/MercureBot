@@ -6,9 +6,7 @@ from aiogram.fsm.context import FSMContext
 from keyboards.inlain_users import ikb
 from lexicon.lexicon import LEXICON
 from fsm import StateMachine
-from database.datacoonect import db
-
-
+from database.dataclass import db
 
 router = Router()
 

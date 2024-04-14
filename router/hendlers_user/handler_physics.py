@@ -3,7 +3,6 @@ from typing import Union
 from keyboards.inlain_users import ikb
 from fsm import StateMachine
 from lexicon.lexicon import LEXICON_PHYSICS
-from log import logger
 
 from aiogram.fsm.context import FSMContext
 from aiogram import Router, F

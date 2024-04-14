@@ -1,5 +1,4 @@
-from database.datacoonect import db
-import json
+from database.dataclass import db
 from abc import ABC, abstractmethod
 
 
@@ -25,6 +24,7 @@ class DictionaryContainerInf(DictionaryContainer):
 
     async def create_container(self) -> None:
         """Создаёт словарь в котором [номер задачи : количество задач в бд]"""
+        
         for i in range(1, 11):
             self.dictionary[i] = await db.count_task(i, "informatics")
 
@@ -47,18 +47,14 @@ class DictionaryContainerPhy(DictionaryContainer):
 
     async def create_container(self) -> None:
         """Создаёт словарь в котором [номер задачи : количество задач в бд]"""
+
         for i in range(1, 21):
             if not i in [17, 18]:
                 self.dictionary[str(i)] = await db.count_task(i, "physics")
             else:
                 if i == 18:
                     for g in range(1, 4):
-                        self.dictionary[f"18_{str(g)}"] = await db.count_task(
-                            f"18_{str(g)}", "physics"
-                        )
-                json_object = json.dumps(self.dictionary, indent=4)
-                with open("sample2.json", "w") as outfile:
-                    outfile.write(json_object)
+                        self.dictionary[f"18_{str(g)}"] = await db.count_task(f"18_{str(g)}", "physics")
 
     async def get_item(self, key) -> int:
         """Извлекает из словаря количество задач по данному номеру"""

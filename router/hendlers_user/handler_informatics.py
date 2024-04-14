@@ -16,9 +16,7 @@ router = Router()
 
 @router.message(Command(commands="informatics"))
 @router.callback_query(F.data == "back_informatics", StateMachine.theory_informatics)
-@router.callback_query(
-    F.data == "back_informatics", StateMachine.task_selection_informatics
-)
+@router.callback_query(F.data == "back_informatics", StateMachine.task_selection_informatics)
 @router.callback_query(F.data == "informatics:section", StateMachine.menu)
 async def informatics(query_message: Union[CallbackQuery, Message], state: FSMContext):
 

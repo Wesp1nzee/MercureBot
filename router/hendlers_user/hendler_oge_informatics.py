@@ -7,9 +7,7 @@ from lexicon.dict_task_number import container_inf
 from keyboards.inlain_users import ikb
 from fsm import StateMachine
 from callback_factory import FactoryTask
-from database.datacoonect import db
-from database.conteiner_fileid import container_fileid
-from log import logger
+from database.dataclass import db
 
 
 router = Router()
@@ -33,22 +31,15 @@ async def callback_informatics_task(callback: CallbackQuery, state: FSMContext):
     await state.set_state(StateMachine.task_selection_informatics)
 
 
-@router.callback_query(
-    FactoryTask.filter(F.object == "informatics"),
-    StateMachine.task_selection_informatics,
-)
-@router.callback_query(
-    FactoryTask.filter(F.object == "informatics"), StateMachine.error_message
-)
-async def message_with_text(
-    callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask
-):
+@router.callback_query(FactoryTask.filter(F.object == "informatics"),StateMachine.task_selection_informatics,)
+@router.callback_query(FactoryTask.filter(F.object == "informatics"), StateMachine.error_message)
+async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     task_number = callback_data.task_number
     await state.update_data(task_number=task_number)
     task_count = await db.chek_count(callback.from_user.id, "informatics", task_number)
     await state.update_data(object="informatics")
 
-    image_id = await container_fileid.get_item_inf(task_number, task_count)
+    image_id = await db.get_task_inf(task_number, task_count)
     await callback.message.answer_photo(
         photo=image_id,
         protect_content=True,
@@ -59,27 +50,22 @@ async def message_with_text(
     )
     try:
         await callback.message.delete()
+
     except TelegramBadRequest:
         await callback.answer()
+
     await state.set_state(StateMachine.leaf_task_informatics)
 
 
-@router.callback_query(
-    FactoryTask.filter(F.object == "informatics" and F.direction == "Next"),
-    StateMachine.leaf_task_informatics,
-)
-async def message_with_text(
-    callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask
-):
+@router.callback_query(FactoryTask.filter(F.object == "informatics" and F.direction == "Next"),StateMachine.leaf_task_informatics,)
+async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     user_data = await state.get_data()
     task_number = user_data["task_number"]
     task_count = callback_data.task_count
 
     if task_count + 1 <= await container_inf.get_item(task_number):
-        await db.update_user_task(
-            callback.from_user.id, "informatics", task_number, sign="+"
-        )
-        image_id = await container_fileid.get_item_inf(task_number, task_count + 1)
+        await db.update_user_task(callback.from_user.id, "informatics", task_number, sign="+")
+        image_id = await db.get_task_inf(task_number, task_count + 1)
 
         await callback.message.edit_media(
             media=InputMediaPhoto(
@@ -94,22 +80,15 @@ async def message_with_text(
         await callback.answer(text="Извините, но больше нельзя!", show_alert=True)
 
 
-@router.callback_query(
-    FactoryTask.filter(F.object == "informatics" and F.direction == "Back"),
-    StateMachine.leaf_task_informatics,
-)
-async def message_with_text(
-    callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask
-):
+@router.callback_query(FactoryTask.filter(F.object == "informatics" and F.direction == "Back"),StateMachine.leaf_task_informatics)
+async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     user_data = await state.get_data()
     task_number = user_data["task_number"]
     task_count = callback_data.task_count
 
     if task_count - 1 > 0:
-        await db.update_user_task(
-            callback.from_user.id, "informatics", task_number, sign="-"
-        )
-        image_id = await container_fileid.get_item_inf(task_number, task_count - 1)
+        await db.update_user_task(callback.from_user.id, "informatics", task_number, sign="-")
+        image_id = await db.get_task_inf(task_number, task_count-1)
 
         await callback.message.edit_media(
             media=InputMediaPhoto(
@@ -124,13 +103,8 @@ async def message_with_text(
         await callback.answer(text="Извините, но меньше нельзя!", show_alert=True)
 
 
-@router.callback_query(
-    FactoryTask.filter(F.object == "informatics" and F.decision == True),
-    StateMachine.leaf_task_informatics,
-)
-async def message_with_text(
-    callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask
-):
+@router.callback_query(FactoryTask.filter(F.object == "informatics" and F.decision == True),StateMachine.leaf_task_informatics,)
+async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     user_data = await state.get_data()
     task_number = user_data["task_number"]
     task_count = callback_data.task_count

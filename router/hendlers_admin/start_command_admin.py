@@ -4,13 +4,13 @@ from aiogram.types import Message, CallbackQuery
 
 from keyboards.inlain_admin import ikb_adm
 from admin_filter import AdminFilter
+from database.dataclass import db
 import psutil
-from database.datacoonect import db
 
 router = Router()
 
 
-@router.callback_query(CommandStart(), AdminFilter)
+@router.message(CommandStart(), AdminFilter)
 async def start_command_admin(message: Message):
 
     cpu_usage = psutil.cpu_percent(interval=1)

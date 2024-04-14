@@ -1,12 +1,11 @@
 from aiogram import Router, F
-from aiogram.types import Message, CallbackQuery
-from aiogram.filters import Command
+from aiogram.types import CallbackQuery
 from aiogram.fsm.context import FSMContext
 
 from keyboards.inlain_users import ikb
 from lexicon.lexicon import generate_tasks_string
 from fsm import StateMachine
-from database.datacoonect import db
+from database.dataclass import db
 
 router = Router()
 
