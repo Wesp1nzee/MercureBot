@@ -23,7 +23,7 @@ class DictionaryContainerInf(DictionaryContainer):
         self.dictionary = {}
 
     async def create_container(self) -> None:
-        """Создаёт словарь в котором [номер задачи : количество задач в бд]"""
+        """Создаёт словарь [номер задачи : количество задач в бд]"""
         
         for i in range(1, 11):
             self.dictionary[i] = await db.count_task(i, "informatics")
@@ -46,7 +46,7 @@ class DictionaryContainerPhy(DictionaryContainer):
         self.dictionary = {}
 
     async def create_container(self) -> None:
-        """Создаёт словарь в котором [номер задачи : количество задач в бд]"""
+        """Создаёт словарь [номер задачи : количество задач в бд]"""
 
         for i in range(1, 21):
             if not i in [17, 18]:

@@ -7,6 +7,8 @@ from asyncio.events import AbstractEventLoop
 
 import sys
 
+import aiomysql.utils
+
 from log import logger
 
 from datetime import datetime
@@ -26,7 +28,6 @@ class DataBase():
         self.password = password
         self.database_name = database_name
         self.loop = loop
-
 
     async def connect(self)-> Connection:
         """Функция созданий соеденении с базой данных"""
@@ -149,7 +150,7 @@ class DataBase():
                     f"SELECT id, task_{task_number} FROM users.{object}_task_decision WHERE (id) = ({user_id})"
                 )
                 for row in await cur.fetchall():
-                    pool.close()
+                    
                     return row[1]
 
     async def get_task_phy(self, task_number: str, tasck_count: str) -> str:
@@ -175,7 +176,7 @@ class DataBase():
             async with pool.cursor() as cur:
                 await cur.execute(f"SELECT id, task_{task_number} FROM users.informatics_task WHERE (id) = ({tasck_count})")
                 for row in (await cur.fetchall()):  # Сопрограмма возвращает все строки результирующего набора запроса -> (list[tuple(),])
-                    pool.close()
+                    
                     return row[1] 
 
     async def add_log(self, user_id: int, content: str) -> None:
@@ -200,11 +201,11 @@ class DataBase():
         """
         async with await self.connect() as pool:
             async with pool.cursor() as cur:
+                cur: aiomysql.utils._ContextManager = pool.cursor()
                 await cur.execute(
                     f"SELECT users_id, data  FROM users.users WHERE users_id = {user_id}"
                 )
                 for row in await cur.fetchall():
-                    pool.close()
                     return row[1]
 
     async def get_task_users(self, user_id: int | str, object: str, ) -> list:
@@ -219,7 +220,6 @@ class DataBase():
                     f"SELECT * FROM users.{object}_task_users WHERE users_id = {user_id}"
                 )
                 for row in await cur.fetchall():
-                    pool.close()
                     return row[1:]  # row -> tuple() row[0] -> user_id
 
     async def count_user_for_admin(self, ) -> int:
@@ -228,7 +228,6 @@ class DataBase():
             async with pool.cursor() as cur:
                 await cur.execute("SELECT count(*) FROM users.users")
                 for row in await cur.fetchall():
-                    pool.close()
                     return row[0]
             
 

@@ -1,4 +1,4 @@
-from aiogram import Router, Bot
+from aiogram import Router
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
@@ -11,7 +11,7 @@ from database.dataclass import db
 router = Router()
 
 
-# Этот хэндлер будет срабатывать на команду "/start"
+# Этот роутер будет срабатывать на команду "/start"
 @router.message(CommandStart())
 async def start_command(message: Message, state: FSMContext):
     await message.answer(

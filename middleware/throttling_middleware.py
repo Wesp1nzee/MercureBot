@@ -6,7 +6,7 @@ from cachetools import TTLCache
 from config import Config, load_config
 
 config: Config = load_config()
-CACHE = TTLCache(maxsize=10000, ttl=0.5)  # Максимальный размер кэша - 10000 ключей, а время жизни ключа - 5 секунд
+CACHE = TTLCache(maxsize=10000, ttl=0.5)  # Максимальный размер кэша - 10000 ключей, а время жизни ключа - 0.5 секунд
 
 class ThrottlingMiddleware(BaseMiddleware):
 

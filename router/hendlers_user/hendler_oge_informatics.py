@@ -31,7 +31,7 @@ async def callback_informatics_task(callback: CallbackQuery, state: FSMContext):
     await state.set_state(StateMachine.task_selection_informatics)
 
 
-@router.callback_query(FactoryTask.filter(F.object == "informatics"),StateMachine.task_selection_informatics,)
+@router.callback_query(FactoryTask.filter(F.object == "informatics"),StateMachine.task_selection_informatics)
 @router.callback_query(FactoryTask.filter(F.object == "informatics"), StateMachine.error_message)
 async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     task_number = callback_data.task_number
@@ -57,7 +57,7 @@ async def message_with_text(callback: CallbackQuery, state: FSMContext, callback
     await state.set_state(StateMachine.leaf_task_informatics)
 
 
-@router.callback_query(FactoryTask.filter(F.object == "informatics" and F.direction == "Next"),StateMachine.leaf_task_informatics,)
+@router.callback_query(FactoryTask.filter(F.object == "informatics" and F.direction == "Next"),StateMachine.leaf_task_informatics)
 async def message_with_text(callback: CallbackQuery, state: FSMContext, callback_data: FactoryTask):
     user_data = await state.get_data()
     task_number = user_data["task_number"]

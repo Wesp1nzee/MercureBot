@@ -397,7 +397,7 @@ class IKB:
                         ).pack(),
                     )
                 ],
-                [InlineKeyboardButton(text="🔙Назад", callback_data=f"back_physics")],
+                [InlineKeyboardButton(text="🔙Назад", callback_data=f"back_physics_task")],
             ]
         )
 
